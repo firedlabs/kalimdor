@@ -1,15 +1,14 @@
-import {
-  Section,
-  Heading,
-  Profile,
-  Description
-} from '@firedlabs/design-system'
-import Content from './styles'
+import { Heading, Profile, Description } from '@firedlabs/design-system'
+import { InstructorStyle, Content } from './styles'
 import marcobruno from 'assets/images/marcobruno.png'
 
 function Instructor() {
   return (
-    <Section backgroundColor="colorBlackFirst" big borderColor="colorFirst">
+    <InstructorStyle
+      backgroundColor="colorBlackFirst"
+      big
+      borderColor="colorFirst"
+    >
       <Heading big>Instrutor</Heading>
       <Content>
         <Profile
@@ -42,7 +41,7 @@ function Instructor() {
           Airsoft ou trocando ideias com amigos.
         </Description>
       </Content>
-    </Section>
+    </InstructorStyle>
   )
 }
 
