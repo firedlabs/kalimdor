@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   Heading,
   Icons,
@@ -7,7 +8,10 @@ import {
   Box,
   Button,
   ListContentDay,
-  Container
+  Container,
+  Field,
+  Modal,
+  Line
 } from '@firedlabs/design-system'
 import { BannerContent, CourseContent, Header, WrapperIcons } from './styles'
 import thumb from 'assets/images/thumb.png'
@@ -16,9 +20,13 @@ import Instructor from 'containers/Instructor'
 import Footer from 'containers/Footer'
 
 function Registration() {
+  const [activeModal, setActiveModal] = useState(false)
+
   const days = [
     {
       title: 'Aula 00',
+      color: 'colorSecond',
+      fontColor: 'colorThird',
       goal:
         'Entender como funcionarão as aulas, onde tirar as dúvidas e o que você precisa instalar na sua máquina.',
       options: [
@@ -34,6 +42,8 @@ function Registration() {
     },
     {
       title: 'Aula 01',
+      color: 'colorSecond',
+      fontColor: 'colorThird',
       goal: (
         <>
           Aprender o básico de <strong>HTML</strong> e <strong>CSS</strong>
@@ -56,6 +66,8 @@ function Registration() {
     },
     {
       title: 'Aula 02',
+      color: 'colorSecond',
+      fontColor: 'colorThird',
       goal: (
         <>
           Entender o básico de <strong>Git</strong> e <strong>GitHub</strong>{' '}
@@ -75,6 +87,8 @@ function Registration() {
     },
     {
       title: 'Aula 03',
+      color: 'colorSecond',
+      fontColor: 'colorThird',
       goal:
         'Entender como posicionar os elementos e quando usar o seletor de class.',
       options: [
@@ -90,6 +104,8 @@ function Registration() {
     },
     {
       title: 'Aula 04',
+      color: 'colorSecond',
+      fontColor: 'colorThird',
       goal: (
         <>
           Aprofundar o conhecimento em <strong>FlexBox</strong> trabalhando na
@@ -109,6 +125,8 @@ function Registration() {
     },
     {
       title: 'Aula 05',
+      color: 'colorSecond',
+      fontColor: 'colorThird',
       goal: (
         <>
           Estudar ainda mais sobre animações com <strong>CSS</strong> e entregar
@@ -128,6 +146,8 @@ function Registration() {
     },
     {
       title: 'Aula 06',
+      color: 'colorSecond',
+      fontColor: 'colorThird',
       goal: (
         <>
           Criar a seção Sobre e aprender um pouco sobre{' '}
@@ -148,6 +168,8 @@ function Registration() {
     },
     {
       title: 'Aula 07',
+      color: 'colorSecond',
+      fontColor: 'colorThird',
       goal: (
         <>
           Lidar com o formulário de contato e validações do{' '}
@@ -167,8 +189,29 @@ function Registration() {
     }
   ]
 
+  const toggleModal = () => {
+    setActiveModal((old) => !old)
+  }
+
+  const closeModal = () => {
+    setActiveModal(false)
+  }
+
   return (
     <>
+      <Modal
+        actionClose={closeModal}
+        active={activeModal}
+        title="Confirme sua matrícula"
+      >
+        <Button backgroundColor="colorSecond" color="colorThird">
+          Twitch
+        </Button>
+        <Line />
+        <Field.Email label="Email" />
+        <Button onClick={toggleModal}>Enviar</Button>
+      </Modal>
+
       <Header>
         <Title>Matrícula acaba em...</Title>
         <Countdown paramLastDate="2021-2-7" />
@@ -193,7 +236,7 @@ function Registration() {
             src={thumb}
             alt="Matrículas abertas para o curso feliz de HTMl e CSS com o Marco Bruno"
           />
-          <Button>Matrícula 100% free</Button>
+          <Button onClick={toggleModal}>Matrícula 100% free</Button>
         </BannerContent>
       </Section>
 
