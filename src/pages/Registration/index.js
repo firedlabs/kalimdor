@@ -18,6 +18,7 @@ import thumb from 'assets/images/thumb.png'
 import Sponsor from 'containers/Sponsor'
 import Instructor from 'containers/Instructor'
 import Footer from 'containers/Footer'
+import Supporters from 'containers/Supporters'
 
 function Registration() {
   const [activeModal, setActiveModal] = useState(false)
@@ -240,23 +241,21 @@ function Registration() {
         </BannerContent>
       </Section>
 
-      <Sponsor />
-
       <Instructor />
 
       <CourseContent
         biggest
         backgroundColor="colorBlackSecond"
-        borderColor="colorWarning"
+        borderColor="colorThird"
       >
         <Container>
           <Heading medium>Conteúdo do curso</Heading>
 
           <Box light>
-            Será uma semana de conteúdo com uma aula nova todos os dias,
-            começando no dia <strong>08/02/2021</strong>. As aula serão
-            liberadas às <strong>06:32</strong> da madrugada na FiredLabs e terá
-            plantão de dúvidas ao vivo às <strong>17:33</strong> na{' '}
+            Uma semana de aulas práticas, começando no dia{' '}
+            <strong>08/02/2021</strong>. As aulas serão liberadas às{' '}
+            <strong>06:32</strong> da madrugada na FiredLabs e terá plantão de
+            dúvidas ao vivo às <strong>17:33</strong> na{' '}
             <a href="https://twitch.tv/marcobrunodev">
               twitch.tv/marcobrunodev
             </a>{' '}
@@ -266,6 +265,10 @@ function Registration() {
           <ListContentDay days={days} />
         </Container>
       </CourseContent>
+
+      <Sponsor />
+
+      <Supporters />
 
       <Footer />
     </>

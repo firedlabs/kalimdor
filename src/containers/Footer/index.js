@@ -3,7 +3,7 @@ import { FiredLabs } from '@firedlabs/design-system'
 
 function Footer() {
   return (
-    <FooterStyle>
+    <FooterStyle as="footer">
       <FiredLabs />
     </FooterStyle>
   )
