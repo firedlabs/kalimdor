@@ -1,10 +1,12 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Registration from './pages/Registration'
+import CourseRegister from './pages/CourseRegister'
+import Home from 'pages/Home'
 
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/registration" component={Registration} />
+      <Route path="/" exact component={Home} />
+      <Route path="/course/register" component={CourseRegister} />
     </Switch>
   </BrowserRouter>
 )

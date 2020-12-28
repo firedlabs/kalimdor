@@ -20,7 +20,7 @@ import Instructor from 'containers/Instructor'
 import Footer from 'containers/Footer'
 import Supporters from 'containers/Supporters'
 
-function Registration() {
+function CourseRegister() {
   const [activeModal, setActiveModal] = useState(false)
 
   const days = [
@@ -36,7 +36,7 @@ function Registration() {
           description: '7'
         },
         {
-          label: 'Liberar Acesso',
+          label: 'Disponível após a',
           description: 'Matrícula'
         }
       ]
@@ -60,7 +60,7 @@ function Registration() {
           description: '20'
         },
         {
-          label: 'Liberar Acesso',
+          label: 'Disponível em:',
           description: '08/02/2021'
         }
       ]
@@ -81,7 +81,7 @@ function Registration() {
           description: '16'
         },
         {
-          label: 'Liberar Acesso',
+          label: 'Disponível em:',
           description: '09/02/2021'
         }
       ]
@@ -98,7 +98,7 @@ function Registration() {
           description: '22'
         },
         {
-          label: 'Liberar Acesso',
+          label: 'Disponível em:',
           description: '10/02/2021'
         }
       ]
@@ -119,7 +119,7 @@ function Registration() {
           description: '26'
         },
         {
-          label: 'Liberar Acesso',
+          label: 'Disponível em:',
           description: '11/02/2021'
         }
       ]
@@ -140,7 +140,7 @@ function Registration() {
           description: '18'
         },
         {
-          label: 'Liberar Acesso',
+          label: 'Disponível em:',
           description: '12/02/2021'
         }
       ]
@@ -162,7 +162,7 @@ function Registration() {
           description: '27'
         },
         {
-          label: 'Liberar Acesso',
+          label: 'Disponível em:',
           description: '13/02/2021'
         }
       ]
@@ -183,7 +183,7 @@ function Registration() {
           description: '28'
         },
         {
-          label: 'Liberar Acesso',
+          label: 'Disponível em:',
           description: '14/02/2021'
         }
       ]
@@ -252,14 +252,16 @@ function Registration() {
           <Heading medium>Conteúdo do curso</Heading>
 
           <Box light>
-            Uma semana de aulas práticas, começando no dia{' '}
-            <strong>08/02/2021</strong>. As aulas serão liberadas às{' '}
-            <strong>06:32</strong> da madrugada na FiredLabs e terá plantão de
+            Uma semana de aulas práticas, 100% grátis e 100% online. Começa no
+            dia <strong>08/02/2021</strong>. As aulas serão liberadas às{' '}
+            <strong>06:32</strong> da madrugada na plataforma{' '}
+            <a href="https://firedlabs.com">FiredLabs</a> e terá plantão de
             dúvidas ao vivo às <strong>17:33</strong> na{' '}
             <a href="https://twitch.tv/marcobrunodev">
               twitch.tv/marcobrunodev
             </a>{' '}
-            todos os dias durante a semana do curso.
+            em todos os dias durante a semana do curso. As aulas ficam
+            disponiveis até o dia 14/02/2021 às 23:59.
           </Box>
 
           <ListContentDay days={days} />
@@ -275,4 +277,4 @@ function Registration() {
   )
 }
 
-export default Registration
+export default CourseRegister
