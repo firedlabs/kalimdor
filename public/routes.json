@@ -2,18 +2,15 @@
   "routes": [
     {
       "route": "/dashboard",
-      "allowedRoles": []
+      "serve": "/"
     },
     {
       "route": "/player",
-      "allowedRoles": []
+      "serve": "/"
     },
     {
       "route": "/event/register",
-      "allowedRoles": []
+      "serve": "/"
     }
-  ],
-  "mimeTypes": {
-      "custom": "text/html"
-  }
+  ]
 }
