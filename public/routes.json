@@ -1,13 +1,16 @@
 {
   "routes": [
     {
-      "route": "/dashboard"
+      "route": "/dashboard",
+      "allowedRoles": []
     },
     {
-      "route": "/player"
+      "route": "/player",
+      "allowedRoles": []
     },
     {
-      "route": "/event/register"
+      "route": "/event/register",
+      "allowedRoles": []
     }
   ],
   "mimeTypes": {
