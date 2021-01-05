@@ -11,18 +11,13 @@ function Dashboard() {
       alt: 'Curso feliz de HTML e CSS',
       progress: {
         valueMax: 164,
-        valueNow: 40
+        valueNow: 0
       },
       src: curso,
       tags: [
         {
           backgroundColor: 'colorThird',
           children: 'video',
-          color: 'colorBlackFirst'
-        },
-        {
-          backgroundColor: 'colorThird',
-          children: 'pdf',
           color: 'colorBlackFirst'
         }
       ],

@@ -6,7 +6,7 @@ import Player from 'pages/Player'
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact component={CourseRegister} />
+      <Route path="/" exact component={Dashboard} />
       <Route path="/event/register" component={CourseRegister} />
 
       <Route path="/dashboard" component={Dashboard} />

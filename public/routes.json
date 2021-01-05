@@ -1,11 +1,6 @@
 {
   "routes": [
     {
-      "route": "/",
-      "serve": "/dashboard",
-      "status": 302
-    },
-    {
       "route": "/dashboard",
       "serve": "/"
     },
