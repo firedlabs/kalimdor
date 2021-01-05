@@ -33,7 +33,7 @@ export const BannerContent = styled.div`
   }
 `
 
-export const CourseContent = styled(Section)`
+export const EventContent = styled(Section)`
   & ${BoxStyles} {
     margin-bottom: var(--gap-biggest);
   }

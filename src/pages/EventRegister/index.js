@@ -13,14 +13,14 @@ import {
   Modal,
   Line
 } from '@firedlabs/design-system'
-import { BannerContent, CourseContent, Header, WrapperIcons } from './styles'
+import { BannerContent, EventContent, Header, WrapperIcons } from './styles'
 import thumb from 'assets/images/thumb.png'
 import Sponsor from 'containers/Sponsor'
 import Instructor from 'containers/Instructor'
 import Footer from 'containers/Footer'
 import Supporters from 'containers/Supporters'
 
-function CourseRegister() {
+function EventRegister() {
   const [activeModal, setActiveModal] = useState(false)
 
   const days = [
@@ -205,7 +205,12 @@ function CourseRegister() {
         active={activeModal}
         title="Confirme sua matrícula"
       >
-        <Button backgroundColor="colorSecond" color="colorThird">
+        <Button
+          as="a"
+          href="/api/auth/twitch/"
+          backgroundColor="colorSecond"
+          color="colorThird"
+        >
           Twitch
         </Button>
         <Line />
@@ -243,7 +248,7 @@ function CourseRegister() {
 
       <Instructor />
 
-      <CourseContent
+      <EventContent
         biggest
         backgroundColor="colorBlackSecond"
         borderColor="colorThird"
@@ -266,7 +271,7 @@ function CourseRegister() {
 
           <ListContentDay days={days} />
         </Container>
-      </CourseContent>
+      </EventContent>
 
       <Sponsor />
 
@@ -277,4 +282,4 @@ function CourseRegister() {
   )
 }
 
-export default CourseRegister
+export default EventRegister
