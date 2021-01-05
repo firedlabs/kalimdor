@@ -3,6 +3,8 @@
     "node_modules{,/**}",
     ".vscode{,/**}"
   ],
-  "appService.defaultWebAppToDeploy": "/subscriptions/3adea183-02bf-4ffa-8e4a-b73e9bb80457/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/firedlabs",
-  "appService.deploySubpath": "."
+  "appService.deploySubpath": ".",
+  "staticWebApps.appSubpath": "/",
+  "staticWebApps.apiSubpath": "api",
+  "staticWebApps.outputSubpath": "build"
 }

@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "/dashboard"
+    },
+    {
+      "route": "/player"
+    },
+    {
+      "route": "/event/register"
+    }
+  ],
+  "mimeTypes": {
+      "custom": "text/html"
+  }
+}
