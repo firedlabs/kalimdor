@@ -1,29 +1,22 @@
-import { ListCovers, TitleLive, Action } from '@firedlabs/design-system'
+import { Cover, TitleLive, Action } from '@firedlabs/design-system'
 import Header from 'containers/Header'
 import curso from 'assets/images/curso-html-css.png'
 import marco from 'assets/images/marcobruno.png'
-import Streamer from './styles'
-import { Link } from 'react-router-dom'
+import { Streamer, CoverLink } from './styles'
 
 function Dashboard() {
-  const covers = [
-    {
-      alt: 'Curso feliz de HTML e CSS',
-      progress: {
-        valueMax: 164,
-        valueNow: 0
-      },
-      src: curso,
-      tags: [
-        {
-          backgroundColor: 'colorThird',
-          children: 'video',
-          color: 'colorBlackFirst'
-        }
-      ],
-      title: 'Curso feliz de HTML e CSS'
-    }
-  ]
+  const htmlCss = {
+    alt: 'Curso feliz de HTML e CSS',
+    src: curso,
+    tags: [
+      {
+        backgroundColor: 'colorThird',
+        children: 'video',
+        color: 'colorBlackFirst'
+      }
+    ],
+    title: 'Curso feliz de HTML e CSS'
+  }
 
   const titleLive = {
     isLive: true,
@@ -39,9 +32,9 @@ function Dashboard() {
         <Action href="https://twitch.tv/marcobrunodev" target="_blank">
           <TitleLive {...titleLive} />
         </Action>
-        <Link to="/player">
-          <ListCovers covers={covers} />
-        </Link>
+        <CoverLink to="/player">
+          <Cover {...htmlCss} />
+        </CoverLink>
       </Streamer>
     </>
   )
