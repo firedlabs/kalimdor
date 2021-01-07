@@ -9,9 +9,7 @@ import {
   Button,
   ListContentDay,
   Container,
-  Field,
-  Modal,
-  Line
+  Modal
 } from '@firedlabs/design-system'
 import { BannerContent, EventContent, Header, WrapperIcons } from './styles'
 import thumb from 'assets/images/thumb.png'
@@ -213,9 +211,6 @@ function EventRegister() {
         >
           Twitch
         </Button>
-        <Line />
-        <Field.Email label="Email" />
-        <Button onClick={toggleModal}>Enviar</Button>
       </Modal>
 
       <Header>
