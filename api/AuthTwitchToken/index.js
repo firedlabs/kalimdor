@@ -1,27 +1,9 @@
 const querystring = require('querystring')
 const axios = require('axios')
-
 const { CLIENT_SECRET, CLIENT_ID, HOST_API } = process.env
-const scope = 'user:read:email'
 
-const getCodeRedirect = (context) => {
-  const query = {
-    client_id: CLIENT_ID,
-    redirect_uri: `${HOST_API}/api/auth/twitch`,
-    response_type: 'code',
-    scope
-  }
-  const url = 'https://id.twitch.tv/oauth2/authorize'
-
-  context.res = {
-    status: 302,
-    headers: {
-      location: `${url}?${querystring.stringify(query, '&')}`
-    }
-  }
-}
-
-const getToken = async (code, context) => {
+module.exports = async function (context, req) {
+  const code = req.query.code || false
   const url = 'https://id.twitch.tv/oauth2/token'
   const query = {
     client_id: CLIENT_ID,
@@ -51,15 +33,5 @@ const getToken = async (code, context) => {
         data: res.data
       }
     }
-  }
-}
-
-module.exports = async function (context, req) {
-  const code = req.query.code || false
-
-  if (code) {
-    await getToken(code)
-  } else {
-    getCodeRedirect(context)
   }
 }

@@ -8,7 +8,7 @@
       "methods": [
         "get"
       ],
-      "route": "naosei"
+      "route": "auth/twitch/token"
     },
     {
       "type": "http",
