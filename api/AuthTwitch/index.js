@@ -1,15 +1,14 @@
 const querystring = require('querystring')
 const axios = require('axios')
-require('dotenv').config()
 
 const clientId = '8fyg9sl1lzyt9lo1enp02ec8avrjkc'
 const scope = 'user:read:email'
-const { CLIENT_SECRET } = process.env
+const { CLIENT_SECRET, HOST_API, HOST_FRONTEND } = process.env
 
 const getCodeRedirect = (context) => {
   const query = {
     client_id: clientId,
-    redirect_uri: 'http://localhost:7071/api/auth/twitch',
+    redirect_uri: `${HOST_API}/api/auth/twitch`,
     response_type: 'code',
     scope
   }
@@ -28,7 +27,7 @@ const getToken = async (context, code) => {
   const query = {
     client_id: clientId,
     client_secret: CLIENT_SECRET,
-    redirect_uri: 'http://localhost:7071/api/auth/twitch',
+    redirect_uri: `${HOST_API}/api/auth/twitch`,
     code,
     grant_type: 'authorization_code'
   }
@@ -50,14 +49,14 @@ module.exports = async function (context, req) {
       context.res = {
         status: 302,
         headers: {
-          location: 'http://localhost:3000/'
+          location: HOST_FRONTEND
         }
       }
     } else {
       context.res = {
         status: 302,
         headers: {
-          location: 'http://localhost:3000/login'
+          location: `${HOST_FRONTEND}/login`
         }
       }
     }
