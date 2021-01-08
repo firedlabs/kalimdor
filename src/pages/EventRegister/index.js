@@ -20,7 +20,6 @@ import Supporters from 'containers/Supporters'
 
 function EventRegister() {
   const [activeModal, setActiveModal] = useState(false)
-
   const days = [
     {
       title: 'Aula 00',
@@ -187,6 +186,7 @@ function EventRegister() {
       ]
     }
   ]
+  const { REACT_APP_API } = process.env
 
   const toggleModal = () => {
     setActiveModal((old) => !old)
@@ -205,7 +205,7 @@ function EventRegister() {
       >
         <Button
           as="a"
-          href="/api/auth/twitch/"
+          href={`${REACT_APP_API}/api/auth/twitch/`}
           backgroundColor="colorSecond"
           color="colorThird"
         >
