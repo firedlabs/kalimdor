@@ -22,7 +22,7 @@ const getCodeRedirect = (context) => {
   }
 }
 
-const getToken = async (context, code) => {
+const getToken = async (code) => {
   const url = 'https://id.twitch.tv/oauth2/token'
   const query = {
     client_id: clientId,
@@ -43,7 +43,7 @@ module.exports = async function (context, req) {
   const code = req.query.code || false
 
   if (code) {
-    const res = await getToken(context, code)
+    const res = await getToken(code)
 
     if (res.data.access_token) {
       context.res = {
