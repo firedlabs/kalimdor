@@ -22,48 +22,44 @@ const getCodeRedirect = (context) => {
   }
 }
 
-const getToken = async (code) => {
+const getToken = async (code, context) => {
   const url = 'https://id.twitch.tv/oauth2/token'
   const query = {
     client_id: clientId,
     client_secret: CLIENT_SECRET,
     redirect_uri: `${HOST_API}/api/auth/twitch`,
     code,
-    grant_type: 'authorization_code'
+    grant_type: 'authorization_cod'
   }
+  let res = false
 
   try {
-    return await axios.post(url, querystring.stringify(query))
+    res = await axios.post(url, querystring.stringify(query))
   } catch (err) {
-    return { error: err.response }
+    const { status, message } = err.response.data
+
+    context.res = {
+      status,
+      body: {
+        message
+      }
+    }
+  }
+
+  if (res) {
+    context.res = {
+      body: {
+        data: res.data
+      }
+    }
   }
 }
 
 module.exports = async function (context, req) {
   const code = req.query.code || false
 
-  context.log('code', req.query.code)
-  context.log('HOST_FRONTEND', HOST_FRONTEND)
-  context.log('HOST_API', HOST_API)
-
   if (code) {
-    const res = await getToken(code)
-
-    if (res.data.access_token) {
-      context.res = {
-        status: 302,
-        headers: {
-          location: HOST_FRONTEND
-        }
-      }
-    } else {
-      context.res = {
-        status: 302,
-        headers: {
-          location: `${HOST_FRONTEND}/login`
-        }
-      }
-    }
+    await getToken(code)
   } else {
     getCodeRedirect(context)
   }
