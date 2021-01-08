@@ -35,14 +35,12 @@ const getToken = async (code) => {
   try {
     return await axios.post(url, querystring.stringify(query))
   } catch (err) {
-    return err.response
+    return { error: err.response }
   }
 }
 
 module.exports = async function (context, req) {
   const code = req.query.code || false
-
-  context.log('value code', code)
 
   if (code) {
     const res = await getToken(code)
