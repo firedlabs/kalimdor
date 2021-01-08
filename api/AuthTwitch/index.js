@@ -42,6 +42,8 @@ const getToken = async (code) => {
 module.exports = async function (context, req) {
   const code = req.query.code || false
 
+  context.log('value code', code)
+
   if (code) {
     const res = await getToken(code)
 
