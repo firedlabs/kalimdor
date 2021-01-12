@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import axios from 'axios'
 import { useHistory } from 'react-router-dom'
 import { Cover, TitleLive, Action, Modal } from '@firedlabs/design-system'
 import Header from 'containers/Header'
@@ -10,7 +9,6 @@ import { Streamer, CoverLink } from './styles'
 function Dashboard() {
   const history = useHistory()
   const [activeModal, setActiveModal] = useState(false)
-  const { REACT_APP_API } = process.env
   const htmlCss = {
     alt: 'Curso feliz de HTML e CSS',
     src: curso,
@@ -36,10 +34,6 @@ function Dashboard() {
 
   const hasFollow = async () => {
     try {
-      const res = await axios.get(`${REACT_APP_API}/api/twitch/followme`, {
-        withCredentials: true
-      })
-      console.log(res)
       history.push('/player')
     } catch (error) {
       console.log('habilitar modal')
