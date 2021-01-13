@@ -1,6 +1,6 @@
+import api from './api'
 const UserService = {}
 
-UserService.getAvatar = () =>
-  fetch('/api/user/avatar').then((response) => response.json())
+UserService.getAvatar = async () => await api.get('/user/avatar')
 
 export default UserService

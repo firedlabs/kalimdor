@@ -2,8 +2,9 @@ import styled from 'styled-components'
 import { TitleLiveStyle } from '@firedlabs/design-system/dist/components/TitleLive/styles'
 import { CoverStyle } from '@firedlabs/design-system/dist/components/Cover/styles'
 import { Action, Image } from '@firedlabs/design-system'
+import { Link } from 'react-router-dom'
 
-export const CoverLink = styled.a`
+export const CoverLink = styled(Link)`
   align-self: flex-start;
 `
 

@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import { useHistory } from 'react-router-dom'
-import { Cover, TitleLive, Action, Modal } from '@firedlabs/design-system'
+import { useState, useEffect } from 'react'
+import { Cover, TitleLive, Action } from '@firedlabs/design-system'
 import Header from 'containers/Header'
 import curso from 'assets/images/curso-html-css.png'
 import marco from 'assets/images/marcobruno.png'
 import { Streamer, CoverLink } from './styles'
+import UserService from 'services/UserService'
 
 function Dashboard() {
-  const history = useHistory()
-  const [activeModal, setActiveModal] = useState(false)
+  const [avatar, setAvatar] = useState('')
   const htmlCss = {
     alt: 'Curso feliz de HTML e CSS',
     src: curso,
@@ -25,37 +24,27 @@ function Dashboard() {
     isLive: true,
     title: 'marcobrunodev',
     src: marco,
-    alt: 'Avatar do Marco Brunoss'
+    alt: 'Avatar do Marco Brunos'
   }
 
-  const closeModal = () => {
-    setActiveModal(false)
-  }
-
-  const hasFollow = async () => {
-    try {
-      history.push('/player')
-    } catch (error) {
-      console.log('habilitar modal')
-    }
-  }
+  useEffect(
+    () =>
+      (async () => {
+        const res = await UserService.getAvatar()
+        setAvatar(res.data)
+      })(),
+    []
+  )
 
   return (
     <>
-      <Header />
-      <Modal
-        actionClose={closeModal}
-        active={activeModal}
-        title="Me segue na Twitch"
-      >
-        Para assistir o curso voce precisa me segui na twitch
-      </Modal>
+      <Header avatar={avatar} />
 
       <Streamer>
         <Action href="https://twitch.tv/marcobrunodev" target="_blank">
           <TitleLive {...titleLive} />
         </Action>
-        <CoverLink onClick={hasFollow}>
+        <CoverLink to="/player">
           <Cover {...htmlCss} />
         </CoverLink>
       </Streamer>
