@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {
   Heading,
   Icons,
@@ -8,8 +7,7 @@ import {
   Box,
   Button,
   ListContentDay,
-  Container,
-  Modal
+  Container
 } from '@firedlabs/design-system'
 import { BannerContent, EventContent, Header, WrapperIcons } from './styles'
 import thumb from 'assets/images/thumb.png'
@@ -19,7 +17,6 @@ import Footer from 'containers/Footer'
 import Supporters from 'containers/Supporters'
 
 function EventRegister() {
-  const [activeModal, setActiveModal] = useState(false)
   const days = [
     {
       title: 'Aula 00',
@@ -188,31 +185,8 @@ function EventRegister() {
   ]
   const { REACT_APP_API } = process.env
 
-  const toggleModal = () => {
-    setActiveModal((old) => !old)
-  }
-
-  const closeModal = () => {
-    setActiveModal(false)
-  }
-
   return (
     <>
-      <Modal
-        actionClose={closeModal}
-        active={activeModal}
-        title="Confirme sua matrícula"
-      >
-        <Button
-          as="a"
-          href={`${REACT_APP_API}/api/auth/twitch/`}
-          backgroundColor="colorSecond"
-          color="colorThird"
-        >
-          Twitch
-        </Button>
-      </Modal>
-
       <Header>
         <Title>Matrícula acaba em...</Title>
         <Countdown paramLastDate="2021-2-7" />
@@ -221,7 +195,7 @@ function EventRegister() {
       <Section
         id="video"
         biggest
-        backgroundColor="colorSecond"
+        backgroundColor="colorBlackThird"
         borderColor="colorThird"
       >
         <BannerContent>
@@ -237,7 +211,14 @@ function EventRegister() {
             src={thumb}
             alt="Matrículas abertas para o curso feliz de HTMl e CSS com o Marco Bruno"
           />
-          <Button onClick={toggleModal}>Matrícula 100% free</Button>
+          <Button
+            as="a"
+            href={`${REACT_APP_API}/api/auth/twitch/`}
+            backgroundColor="colorSecond"
+            color="colorThird"
+          >
+            Matrícula via Twitch
+          </Button>
         </BannerContent>
       </Section>
 

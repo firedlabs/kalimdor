@@ -2,7 +2,9 @@ import styled from 'styled-components'
 import { Section, Icons } from '@firedlabs/design-system'
 import { BoxStyles } from '@firedlabs/design-system/dist/components/Box/styles'
 
-export const Header = styled(Section)`
+export const Header = styled(Section).attrs({
+  as: 'header'
+})`
   display: flex;
   flex-direction: column;
   justify-content: center;
