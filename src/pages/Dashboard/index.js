@@ -30,8 +30,12 @@ function Dashboard() {
   useEffect(
     () =>
       (async () => {
-        const res = await UserService.getAvatar()
-        setAvatar(res.data)
+        try {
+          const res = await UserService.getAvatar()
+          setAvatar(res.data)
+        } catch (err) {
+          setAvatar('')
+        }
       })(),
     []
   )
