@@ -3,6 +3,7 @@ import ReactGA from 'react-ga'
 import CourseRegister from './pages/EventRegister'
 import Dashboard from 'pages/Dashboard'
 import Player from 'pages/Player'
+import Profile from 'pages/Profile'
 
 const Router = () => {
   ReactGA.initialize('UA-186693543-1')
@@ -15,6 +16,7 @@ const Router = () => {
 
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/player" component={Player} />
+        <Route path="/profile" component={Profile} />
       </Switch>
     </BrowserRouter>
   )
