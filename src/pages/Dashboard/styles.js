@@ -11,7 +11,7 @@ export const CoverLink = styled(Link)`
 export const Streamer = styled.section`
   display: flex;
   flex-direction: column;
-  padding: var(--gap-big);
+  padding: 0 var(--gap-big) var(--gap-big);
 
   & > ${Action} {
     text-decoration: none;
