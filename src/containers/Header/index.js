@@ -47,7 +47,9 @@ function Header() {
 
   return (
     <HeaderStyle>
-      <FiredLabs />
+      <Link to="/">
+        <FiredLabs />
+      </Link>
 
       {hasAvatar()}
     </HeaderStyle>

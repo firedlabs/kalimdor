@@ -11,8 +11,9 @@ const HeaderStyle = styled(Section).attrs({
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: var(--gap-big);
 
-  & > ${FiredLabs}, & > ${ActionImageStyle} {
+  & ${FiredLabs}, & > ${ActionImageStyle} {
     height: 5.6rem;
     min-height: 40px;
     flex-shrink: 0;
