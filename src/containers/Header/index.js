@@ -6,17 +6,21 @@ import UserService from 'services/UserService'
 import HeaderStyle from './styles'
 
 function Header() {
-  const [avatar, setAvatar] = useState('')
+  const [avatar, setAvatar] = useState(
+    JSON.parse(localStorage.getItem('avatar'))
+  )
   const { REACT_APP_API } = process.env
 
   useEffect(
     () =>
       (async () => {
         try {
-          const res = await UserService.getAvatar()
-          setAvatar(res.data)
+          const { data } = await UserService.getAvatar()
+          setAvatar(data)
+          localStorage.setItem('avatar', JSON.stringify(data))
         } catch (err) {
           setAvatar('')
+          localStorage.removeItem('avatar')
         }
       })(),
     []

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Container, Title, Field, Button } from '@firedlabs/design-system'
 import UserService from 'services/UserService'
-import Header from 'containers/Header'
 import ModalError from 'containers/ModalError'
 
 function Profile() {
@@ -12,7 +11,8 @@ function Profile() {
   const logout = async () => {
     try {
       await UserService.twitchRevoke()
-      history.push('/')
+      localStorage.removeItem('avatar')
+      history.push('/logout')
     } catch (err) {
       setActiveModal(true)
     }
@@ -25,7 +25,7 @@ function Profile() {
   return (
     <>
       <ModalError active={activeModal} actionClose={handleCloseModal} />
-      <Header />
+
       <Container>
         <Title>Dados da Twitch</Title>
 

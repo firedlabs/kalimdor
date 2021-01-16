@@ -1,5 +1,4 @@
 import { Cover, TitleLive, Action } from '@firedlabs/design-system'
-import Header from 'containers/Header'
 import curso from 'assets/images/curso-html-css.png'
 import marco from 'assets/images/marcobruno.png'
 import { Streamer, CoverLink } from './styles'
@@ -25,18 +24,14 @@ function Dashboard() {
   }
 
   return (
-    <>
-      <Header />
-
-      <Streamer>
-        <Action href="https://twitch.tv/marcobrunodev" target="_blank">
-          <TitleLive {...titleLive} />
-        </Action>
-        <CoverLink to="/player">
-          <Cover {...htmlCss} />
-        </CoverLink>
-      </Streamer>
-    </>
+    <Streamer>
+      <Action href="https://twitch.tv/marcobrunodev" target="_blank">
+        <TitleLive {...titleLive} />
+      </Action>
+      <CoverLink to="/player">
+        <Cover {...htmlCss} />
+      </CoverLink>
+    </Streamer>
   )
 }
 
