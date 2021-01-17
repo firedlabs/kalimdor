@@ -10,8 +10,6 @@ function ModalError({ active, actionClose, children }) {
     </>
   )
 
-  console.log('children', children)
-
   return (
     <Modal active={active} actionClose={actionClose}>
       <Description>{children || contentDefault}</Description>
