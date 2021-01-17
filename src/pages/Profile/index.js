@@ -1,51 +1,15 @@
-import { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
 import { Container, Title, Field, Button, Box } from '@firedlabs/design-system'
-import UserService from 'services/UserService'
 import ModalError from 'containers/ModalError'
+import useProfile from './useProfile'
 
 function Profile() {
-  const [user, setUser] = useState({
-    login: 'carregando...',
-    email: 'carregando...'
-  })
-  const [activeModalErrorDefault, setActiveModalModalErrorDefault] = useState(
-    false
-  )
-  const [activeModalErrorInfosUser, setActiveModalErrorInfosUser] = useState(
-    false
-  )
-  const history = useHistory()
-
-  useEffect(
-    () =>
-      (async () => {
-        try {
-          const res = await UserService.getTwitch()
-          const { login, email } = res.data
-
-          setUser({ login, email })
-        } catch (err) {
-          setActiveModalErrorInfosUser(true)
-        }
-      })(),
-    []
-  )
-
-  const logout = async () => {
-    try {
-      await UserService.twitchRevoke()
-      localStorage.removeItem('avatar')
-      history.push('/logout')
-    } catch (err) {
-      setActiveModalModalErrorDefault(true)
-    }
-  }
-
-  const handleCloseModal = () => {
-    setActiveModalModalErrorDefault(false)
-    setActiveModalErrorInfosUser(false)
-  }
+  const {
+    user,
+    activeModalErrorDefault,
+    activeModalErrorInfosUser,
+    logout,
+    handleCloseModal
+  } = useProfile()
 
   return (
     <>
