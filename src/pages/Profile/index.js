@@ -9,8 +9,12 @@ function Profile() {
     login: 'carregando...',
     email: 'carregando...'
   })
-  const [activeModal, setActiveModal] = useState(false)
-  const [contentModalError, setContentModalError] = useState('')
+  const [activeModalErrorDefault, setActiveModalModalErrorDefault] = useState(
+    false
+  )
+  const [activeModalErrorInfosUser, setActiveModalErrorInfosUser] = useState(
+    false
+  )
   const history = useHistory()
 
   useEffect(
@@ -22,10 +26,7 @@ function Profile() {
 
           setUser({ login, email })
         } catch (err) {
-          setContentModalError(
-            'Infelizmente não consegui carregar as informações do seu profile, estamos com algum erro no servidor ou na twitch. Por favor, tente mais tarde1'
-          )
-          setActiveModal(true)
+          setActiveModalErrorInfosUser(true)
         }
       })(),
     []
@@ -37,18 +38,31 @@ function Profile() {
       localStorage.removeItem('avatar')
       history.push('/logout')
     } catch (err) {
-      setActiveModal(true)
+      setActiveModalModalErrorDefault(true)
     }
   }
 
   const handleCloseModal = () => {
-    setActiveModal(false)
+    setActiveModalModalErrorDefault(false)
+    setActiveModalErrorInfosUser(false)
   }
 
   return (
     <>
-      <ModalError active={activeModal} actionClose={handleCloseModal}>
-        {contentModalError}
+      <ModalError
+        active={activeModalErrorDefault}
+        actionClose={handleCloseModal}
+      />
+      <ModalError
+        active={activeModalErrorInfosUser}
+        actionClose={handleCloseModal}
+      >
+        <>
+          Infelizment não consegui carregar as infos do seu usuário. Estamos com
+          alguma instabilidade no servidor ou na twitch, tente mais tarde e se
+          não der vai pentelhar o dev na{' '}
+          <a href="https://twitch.tv/marcobrunodev">twitch.tv/marcobrunodev</a>
+        </>
       </ModalError>
 
       <Container>
