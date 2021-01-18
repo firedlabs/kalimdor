@@ -4,11 +4,12 @@ import UserService from 'services/UserService'
 
 function useDashboard() {
   const [modalFollowStreamer, setModalFollowStreamer] = useState(false)
+  const [modalError, setModalError] = useState(false)
   const history = useHistory()
 
   const handleClickCover = async () => {
     try {
-      await UserService.followStreamer()
+      await UserService.hasFollowStreamer()
 
       history.push('/player')
     } catch (err) {
@@ -19,8 +20,27 @@ function useDashboard() {
   }
 
   const closeModalFollowStreamer = () => setModalFollowStreamer(false)
+  const closeModalError = () => setModalError(false)
 
-  return { handleClickCover, modalFollowStreamer, closeModalFollowStreamer }
+  const followStreamer = async () => {
+    try {
+      await UserService.followStreamer()
+      setModalFollowStreamer(false)
+      history.push('/player')
+    } catch (err) {
+      setModalFollowStreamer(false)
+      setModalError(true)
+    }
+  }
+
+  return {
+    handleClickCover,
+    modalFollowStreamer,
+    closeModalFollowStreamer,
+    followStreamer,
+    modalError,
+    closeModalError
+  }
 }
 
 export default useDashboard

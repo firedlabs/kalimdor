@@ -8,6 +8,7 @@ import {
 } from '@firedlabs/design-system'
 import curso from 'assets/images/curso-html-css.png'
 import marco from 'assets/images/marcobruno.png'
+import ModalError from 'containers/ModalError'
 import { Streamer, CoverAction } from './styles'
 import useDashboard from './useDashboard'
 
@@ -15,7 +16,10 @@ function Dashboard() {
   const {
     handleClickCover,
     modalFollowStreamer,
-    closeModalFollowStreamer
+    closeModalFollowStreamer,
+    followStreamer,
+    modalError,
+    closeModalError
   } = useDashboard()
 
   const htmlCss = {
@@ -49,10 +53,12 @@ function Dashboard() {
           <a href="https://twitch.tv/marcobrunodev">twitch.tv/marcobrunodev</a>
         </Description>
 
-        <Button medium backgroundColor="colorSecond">
+        <Button medium backgroundColor="colorSecond" onClick={followStreamer}>
           Seguir Marco Bruno
         </Button>
       </Modal>
+
+      <ModalError active={modalError} actionClose={closeModalError} />
       <Streamer>
         <Action href="https://twitch.tv/marcobrunodev" target="_blank">
           <TitleLive {...titleLive} />
