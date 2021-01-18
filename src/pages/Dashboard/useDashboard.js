@@ -6,6 +6,7 @@ function useDashboard() {
   const [modalFollowStreamer, setModalFollowStreamer] = useState(false)
   const [modalError, setModalError] = useState(false)
   const history = useHistory()
+  const { REACT_APP_API } = process.env
 
   const handleClickCover = async () => {
     try {
@@ -13,9 +14,13 @@ function useDashboard() {
 
       history.push('/player')
     } catch (err) {
-      const { status } = err.response
+      const { status } = err.response || false
 
-      status === 401 && setModalFollowStreamer(true)
+      if (status === 401) {
+        setModalFollowStreamer(true)
+      } else {
+        window.location = `${REACT_APP_API}/api/auth/twitch/`
+      }
     }
   }
 
