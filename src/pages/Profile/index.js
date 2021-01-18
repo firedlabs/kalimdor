@@ -1,54 +1,32 @@
-import { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
 import { Container, Title, Field, Button, Box } from '@firedlabs/design-system'
-import UserService from 'services/UserService'
 import ModalError from 'containers/ModalError'
+import useProfile from './useProfile'
 
 function Profile() {
-  const [user, setUser] = useState({
-    login: 'carregando...',
-    email: 'carregando...'
-  })
-  const [activeModal, setActiveModal] = useState(false)
-  const [contentModalError, setContentModalError] = useState('')
-  const history = useHistory()
-
-  useEffect(
-    () =>
-      (async () => {
-        try {
-          const res = await UserService.getTwitch()
-          const { login, email } = res.data
-
-          setUser({ login, email })
-        } catch (err) {
-          setContentModalError(
-            'Infelizmente não consegui carregar as informações do seu profile, estamos com algum erro no servidor ou na twitch. Por favor, tente mais tarde1'
-          )
-          setActiveModal(true)
-        }
-      })(),
-    []
-  )
-
-  const logout = async () => {
-    try {
-      await UserService.twitchRevoke()
-      localStorage.removeItem('avatar')
-      history.push('/logout')
-    } catch (err) {
-      setActiveModal(true)
-    }
-  }
-
-  const handleCloseModal = () => {
-    setActiveModal(false)
-  }
+  const {
+    user,
+    activeModalErrorDefault,
+    activeModalErrorInfosUser,
+    logout,
+    handleCloseModal
+  } = useProfile()
 
   return (
     <>
-      <ModalError active={activeModal} actionClose={handleCloseModal}>
-        {contentModalError}
+      <ModalError
+        active={activeModalErrorDefault}
+        actionClose={handleCloseModal}
+      />
+      <ModalError
+        active={activeModalErrorInfosUser}
+        actionClose={handleCloseModal}
+      >
+        <>
+          Infelizment não consegui carregar as infos do seu usuário. Estamos com
+          alguma instabilidade no servidor ou na twitch, tente mais tarde e se
+          não der vai pentelhar o dev na{' '}
+          <a href="https://twitch.tv/marcobrunodev">twitch.tv/marcobrunodev</a>
+        </>
       </ModalError>
 
       <Container>
