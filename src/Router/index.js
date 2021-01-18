@@ -5,6 +5,8 @@ import Dashboard from 'pages/Dashboard'
 import Player from 'pages/Player'
 import Profile from 'pages/Profile'
 import WithHeader from './WithHeader'
+import PrivateRoute from './PrivateRoute'
+import NotFound from 'pages/NotFound'
 
 const Router = () => {
   ReactGA.initialize('UA-186693543-1')
@@ -16,8 +18,10 @@ const Router = () => {
         <WithHeader path="/profile" component={Profile} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/event/register" component={CourseRegister} />
-        <Route path="/player" component={Player} />
+        <PrivateRoute path="/player" component={Player} />
         <Redirect from="/logout" to="/" />
+
+        <Route path="/404" component={NotFound} />
       </Switch>
     </BrowserRouter>
   )
