@@ -12,7 +12,7 @@ function Player() {
       'https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217',
     lessons: [
       {
-        title: 'Aula 00',
+        title: 'Módulo 00',
         videos: [
           {
             src:
@@ -66,7 +66,7 @@ function Player() {
         ]
       }
     ],
-    lessonActive: 'Aula 00'
+    lessonActive: 'Módulo 00'
   }
 
   return <VideoPlayer {...data} />
