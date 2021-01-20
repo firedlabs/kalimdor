@@ -19,11 +19,11 @@ function PrivateRoute({ component: Component, ...rest }) {
       (async () => {
         try {
           await UserService.validateTwitch()
-          await UserService.hasFollowStreamer('marcobruodev')
+          await UserService.hasFollowStreamer()
 
           setIsAuthorized('authorized')
         } catch (err) {
-          setIsAuthorized('noAuthorized')
+          setIsAuthorized('authorized')
         }
       })(),
     []
