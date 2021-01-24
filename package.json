@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@firedlabs/design-system": "^0.3.13",
+    "@firedlabs/design-system": "^0.3.18",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.1.10",
+    "@testing-library/user-event": "^12.6.2",
     "axios": "^0.21.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
