@@ -6,17 +6,19 @@ import UserTypesService from 'services/UserTypesService'
 function useFormUserTypes() {
   const history = useHistory()
   const [activeModalError, setActiveModalError] = useState()
+  const [activeLoading, setActiveLoading] = useState()
   const { register, handleSubmit } = useForm({
     defaultValues: { name: '', description: '' }
   })
 
   const newUserTypes = async (type) => {
     try {
-      console.log('type', type)
+      setActiveLoading(true)
       await UserTypesService.save(type)
+      setActiveLoading(false)
       history.push('/admin/user/types')
     } catch (err) {
-      console.log('err', err)
+      setActiveLoading(false)
       setActiveModalError(true)
     }
   }
@@ -28,7 +30,8 @@ function useFormUserTypes() {
     handleSubmit,
     newUserTypes,
     activeModalError,
-    actionCloseModalError
+    actionCloseModalError,
+    activeLoading
   }
 }
 
