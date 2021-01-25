@@ -18,7 +18,7 @@ function useUser() {
             users.map(({ avatar, login }) => [
               avatar,
               login,
-              { as: Link, to: `/users/${login}`, content: 'editar' }
+              { as: Link, to: `/admin/user/${login}`, content: 'editar' }
             ])
           )
         } catch (err) {
