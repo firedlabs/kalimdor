@@ -10,5 +10,8 @@ UserService.validateTwitch = async () => await api.get('/user/twitch/validate')
 UserService.hasFollowStreamer = async () => await api.get('/user/twitch/follow')
 UserService.followStreamer = async () => await api.post('/user/twitch/follow')
 UserService.hasSubTwitch = async () => await api.get('/user/twitch/sub')
+UserService.update = async (body) =>
+  await api.post('/user', JSON.stringify(body))
+UserService.hasAuthorized = async () => await api.get('/user/authorized')
 
 export default UserService
