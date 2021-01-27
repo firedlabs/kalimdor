@@ -1,19 +1,16 @@
 import { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
+
 import UserService from 'services/UserService'
 
 function useProfile() {
-  const [user, setUser] = useState({
-    login: 'carregando...',
-    email: 'carregando...'
-  })
+  const { register, setValue } = useForm()
   const [activeModalErrorDefault, setActiveModalModalErrorDefault] = useState(
     false
   )
   const [activeModalErrorInfosUser, setActiveModalErrorInfosUser] = useState(
     false
   )
-  const history = useHistory()
 
   useEffect(
     () =>
@@ -22,7 +19,8 @@ function useProfile() {
           const res = await UserService.getTwitch()
           const { login, email } = res.data
 
-          setUser({ login, email })
+          setValue('login', login)
+          setValue('email', email)
         } catch (err) {
           setActiveModalErrorInfosUser(true)
         }
@@ -30,26 +28,15 @@ function useProfile() {
     []
   )
 
-  const logout = async () => {
-    try {
-      await UserService.twitchRevoke()
-      localStorage.removeItem('avatar')
-      history.push('/logout')
-    } catch (err) {
-      setActiveModalModalErrorDefault(true)
-    }
-  }
-
   const handleCloseModal = () => {
     setActiveModalModalErrorDefault(false)
     setActiveModalErrorInfosUser(false)
   }
 
   return {
-    user,
+    register,
     activeModalErrorDefault,
     activeModalErrorInfosUser,
-    logout,
     handleCloseModal
   }
 }
