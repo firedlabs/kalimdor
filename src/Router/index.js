@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import ReactGA from 'react-ga'
 import CourseRegister from 'pages/EventRegister'
 import Dashboard from 'pages/Dashboard'
@@ -41,6 +41,7 @@ const Router = () => {
 
         <Route path="/logout" component={Logout} />
         <Route path="/404" component={NotFound} />
+        <Redirect from="*" to="/404" />
       </Switch>
     </BrowserRouter>
   )
