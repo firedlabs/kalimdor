@@ -1,13 +1,13 @@
-import { Container, Title, Field, Button, Box } from '@firedlabs/design-system'
+import { Container, Title, Field, Button, Form } from '@firedlabs/design-system'
 import ModalError from 'containers/ModalError'
+import { Link } from 'react-router-dom'
 import useProfile from './useProfile'
 
 function Profile() {
   const {
-    user,
+    register,
     activeModalErrorDefault,
     activeModalErrorInfosUser,
-    logout,
     handleCloseModal
   } = useProfile()
 
@@ -32,14 +32,14 @@ function Profile() {
       <Container>
         <Title>Dados da Twitch</Title>
 
-        <Box>
-          <Field.Text label="Login" value={user.login} readOnly />
-          <Field.Email value={user.email} readOnly />
+        <Form>
+          <Field.Text label="Login" name="login" register={register} readOnly />
+          <Field.Email name="email" register={register} readOnly />
 
-          <Button medium onClick={logout}>
+          <Button medium as={Link} to="/logout">
             Logout
           </Button>
-        </Box>
+        </Form>
       </Container>
     </>
   )

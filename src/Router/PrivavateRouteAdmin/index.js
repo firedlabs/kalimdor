@@ -3,13 +3,22 @@ import { Route, Redirect } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import FakeLoadingScreen from 'containers/FakeLoadingScreen'
 import UserService from 'services/UserService'
+import Header from 'containers/Header'
 
-function PrivateRoute({ component: Component, ...rest }) {
+function PrivateRouteAdmin({ component: Component, ...rest }) {
   const [isAuthorized, setIsAuthorized] = useState('loading')
   const screens = {
     loading: <FakeLoadingScreen active={isAuthorized === 'loading'} />,
     authorized: (
-      <Route {...rest} render={(propsRoute) => <Component {...propsRoute} />} />
+      <Route
+        {...rest}
+        render={(propsRoute) => (
+          <>
+            <Header />
+            <Component {...propsRoute} />
+          </>
+        )}
+      />
     ),
     noAuthorized: <Redirect to="/404" />
   }
@@ -18,8 +27,7 @@ function PrivateRoute({ component: Component, ...rest }) {
     () =>
       (async () => {
         try {
-          await UserService.validateTwitch()
-          await UserService.hasFollowStreamer()
+          await UserService.hasAuthorized()
 
           setIsAuthorized('authorized')
         } catch (err) {
@@ -32,8 +40,8 @@ function PrivateRoute({ component: Component, ...rest }) {
   return screens[isAuthorized]
 }
 
-PrivateRoute.propTypes = {
+PrivateRouteAdmin.propTypes = {
   component: PropTypes.element.isRequired
 }
 
-export default PrivateRoute
+export default PrivateRouteAdmin
