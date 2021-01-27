@@ -17,22 +17,22 @@ const dataFollow = {
       videos: [
         {
           src:
-            'https://player.vimeo.com/external/490348141.hd.mp4?s=e473c83ba63929f71334bd4167fcf8be3fd59930&profile_id=175',
-          title: 'Projeto do curso',
+            'https://player.vimeo.com/external/502166017.hd.mp4?s=b6b52061d00a692e9c8ed41778759a4b7b0a4669&profile_id=169&v=1',
+          title: 'Carregando 1...',
           poster: 'https://i.vimeocdn.com/video/1038997437.jpg',
           type: 'video/mp4'
         },
         {
           src:
-            'https://player.vimeo.com/external/490348213.hd.mp4?s=65af3df8e8f3339abf933b0cb1aea8e9a67c587e&profile_id=175',
-          title: 'Pré-requisitos do curso',
+            'https://player.vimeo.com/external/502166017.hd.mp4?s=b6b52061d00a692e9c8ed41778759a4b7b0a4669&profile_id=169&v=2',
+          title: 'Carregando 2...',
           poster: 'https://i.vimeocdn.com/video/1038997437.jpg',
           type: 'video/mp4'
         },
         {
           src:
-            'https://player.vimeo.com/external/490348393.hd.mp4?s=8734fcb0db1e45cde958fe2e34daea395c18e9b1&profile_id=175',
-          title: 'Onde tirar suas dúvidas',
+            'https://player.vimeo.com/external/502166017.hd.mp4?s=b6b52061d00a692e9c8ed41778759a4b7b0a4669&profile_id=169&v=3',
+          title: 'Carregando 3...',
           poster: 'https://i.vimeocdn.com/video/1038997437.jpg',
           type: 'video/mp4'
         }
