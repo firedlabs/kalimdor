@@ -1,15 +1,7 @@
 {
   "routes": [
     {
-      "route": "/dashboard",
-      "serve": "/"
-    },
-    {
-      "route": "/player",
-      "serve": "/"
-    },
-    {
-      "route": "/event/register",
+      "route": "/*",
       "serve": "/"
     }
   ]
