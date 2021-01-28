@@ -19,14 +19,14 @@ import Supporters from 'containers/Supporters'
 function EventRegister() {
   const days = [
     {
-      title: 'Aula 00',
+      title: 'Módulo 00',
       color: 'colorSecond',
       fontColor: 'colorThird',
       goal:
         'Entender como funcionarão as aulas, onde tirar as dúvidas e o que você precisa instalar na sua máquina.',
       options: [
         {
-          label: 'Qtd. Videos',
+          label: 'Qtd. Aulas',
           description: '7'
         },
         {
@@ -36,7 +36,7 @@ function EventRegister() {
       ]
     },
     {
-      title: 'Aula 01',
+      title: 'Módulo 01',
       color: 'colorSecond',
       fontColor: 'colorThird',
       goal: (
@@ -50,7 +50,7 @@ function EventRegister() {
       ),
       options: [
         {
-          label: 'Qtd. Videos',
+          label: 'Qtd. Aulas',
           description: '20'
         },
         {
@@ -60,7 +60,7 @@ function EventRegister() {
       ]
     },
     {
-      title: 'Aula 02',
+      title: 'Módulo 02',
       color: 'colorSecond',
       fontColor: 'colorThird',
       goal: (
@@ -71,7 +71,7 @@ function EventRegister() {
       ),
       options: [
         {
-          label: 'Qtd. Videos',
+          label: 'Qtd. Aulas',
           description: '16'
         },
         {
@@ -81,14 +81,14 @@ function EventRegister() {
       ]
     },
     {
-      title: 'Aula 03',
+      title: 'Módulo 03',
       color: 'colorSecond',
       fontColor: 'colorThird',
       goal:
         'Entender como posicionar os elementos e quando usar o seletor de class.',
       options: [
         {
-          label: 'Qtd. Videos',
+          label: 'Qtd. Aulas',
           description: '22'
         },
         {
@@ -98,7 +98,7 @@ function EventRegister() {
       ]
     },
     {
-      title: 'Aula 04',
+      title: 'Módulo 04',
       color: 'colorSecond',
       fontColor: 'colorThird',
       goal: (
@@ -109,7 +109,7 @@ function EventRegister() {
       ),
       options: [
         {
-          label: 'Qtd. Videos',
+          label: 'Qtd. Aulas',
           description: '26'
         },
         {
@@ -119,7 +119,7 @@ function EventRegister() {
       ]
     },
     {
-      title: 'Aula 05',
+      title: 'Módulo 05',
       color: 'colorSecond',
       fontColor: 'colorThird',
       goal: (
@@ -130,7 +130,7 @@ function EventRegister() {
       ),
       options: [
         {
-          label: 'Qtd. Videos',
+          label: 'Qtd. Aulas',
           description: '18'
         },
         {
@@ -140,7 +140,7 @@ function EventRegister() {
       ]
     },
     {
-      title: 'Aula 06',
+      title: 'Módulo 06',
       color: 'colorSecond',
       fontColor: 'colorThird',
       goal: (
@@ -152,7 +152,7 @@ function EventRegister() {
       ),
       options: [
         {
-          label: 'Qtd. Videos',
+          label: 'Qtd. Aulas',
           description: '27'
         },
         {
@@ -162,7 +162,7 @@ function EventRegister() {
       ]
     },
     {
-      title: 'Aula 07',
+      title: 'Módulo 07',
       color: 'colorSecond',
       fontColor: 'colorThird',
       goal: (
@@ -173,7 +173,7 @@ function EventRegister() {
       ),
       options: [
         {
-          label: 'Qtd. Videos',
+          label: 'Qtd. Aulas',
           description: '28'
         },
         {
