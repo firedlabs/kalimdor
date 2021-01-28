@@ -236,7 +236,7 @@ function EventRegister() {
             Uma semana de aulas práticas, 100% grátis e 100% online. Começa no
             dia <strong>08/02/2021</strong>. As aulas serão liberadas às{' '}
             <strong>06:32</strong> da madrugada na plataforma{' '}
-            <a href="https://firedlabs.com">FiredLabs</a> e terá plantão de
+            <a href="https://www.firedlabs.com">FiredLabs</a> e terá plantão de
             dúvidas ao vivo às <strong>17:33</strong> na{' '}
             <a href="https://twitch.tv/marcobrunodev">
               twitch.tv/marcobrunodev
