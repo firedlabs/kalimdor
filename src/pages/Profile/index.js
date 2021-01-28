@@ -22,9 +22,9 @@ function Profile() {
         actionClose={handleCloseModal}
       >
         <>
-          Infelizment não consegui carregar as infos do seu usuário. Estamos com
-          alguma instabilidade no servidor ou na twitch, tente mais tarde e se
-          não der vai pentelhar o dev na{' '}
+          Infelizmente não consegui carregar as infos do seu usuário. Estamos
+          com alguma instabilidade no servidor ou na twitch, tente mais tarde e
+          se não der vai pentelhar o dev na{' '}
           <a href="https://twitch.tv/marcobrunodev">twitch.tv/marcobrunodev</a>
         </>
       </ModalError>
