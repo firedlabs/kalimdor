@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Section, Icons } from '@firedlabs/design-system'
 import { BoxStyles } from '@firedlabs/design-system/dist/components/Box/styles'
+import { Button } from '@firedlabs/design-system/dist/components'
 
 export const Header = styled(Section).attrs({
   as: 'header'
@@ -30,8 +31,8 @@ export const BannerContent = styled.div`
   max-width: 820px;
   margin: 0 auto;
 
-  & > ${BoxStyles} {
-    margin-bottom: var(--gap-small);
+  & > ${Button} {
+    margin-top: var(--gap-medium);
   }
 `
 

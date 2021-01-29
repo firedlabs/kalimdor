@@ -7,10 +7,10 @@ import {
   Box,
   Button,
   ListContentDay,
-  Container
+  Container,
+  VideoPlayer
 } from '@firedlabs/design-system'
 import { BannerContent, EventContent, Header, WrapperIcons } from './styles'
-import thumb from 'assets/images/thumb.png'
 import Sponsor from 'containers/Sponsor'
 import Instructor from 'containers/Instructor'
 import Footer from 'containers/Footer'
@@ -207,9 +207,14 @@ function EventRegister() {
             <Icons name="html" />
             <Icons name="css" />
           </WrapperIcons>
-          <Box
-            src={thumb}
-            alt="Matrículas abertas para o curso feliz de HTMl e CSS com o Marco Bruno"
+          <VideoPlayer
+            box={true}
+            sources={{
+              src:
+                'https://player.vimeo.com/external/504737839.hd.mp4?s=8212099bc1a53dcbc4e184f0dd787e4dce2f4f44&profile_id=169',
+              type: 'video/mp4'
+            }}
+            poster="https://i.vimeocdn.com/video/1046890769.jpg"
           />
           <Button
             as="a"
