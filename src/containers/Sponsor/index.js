@@ -10,6 +10,7 @@ function Sponsor() {
       <ActionImage
         href="https://www.alura.com.br/promocao/marcobrunodev"
         src={alura}
+        target="_blank"
         alt="Logo da Alura"
         size="medium"
         isPadding={false}

@@ -9,11 +9,10 @@ const dataFollow = {
 
     type: 'video/mp4'
   },
-  poster:
-    'https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217',
   lessons: [
     {
       title: 'Módulo 00',
+      tag: 'novo',
       videos: [
         {
           src:
@@ -65,7 +64,14 @@ const dataFollow = {
           type: 'video/mp4'
         }
       ]
-    }
+    },
+    { title: 'Módulo 01', tag: '08/02', videos: [] },
+    { title: 'Módulo 02', tag: '09/02', videos: [] },
+    { title: 'Módulo 03', tag: '10/02', videos: [] },
+    { title: 'Módulo 04', tag: '11/02', videos: [] },
+    { title: 'Módulo 05', tag: '12/02', videos: [] },
+    { title: 'Módulo 06', tag: '13/02', videos: [] },
+    { title: 'Módulo 07', tag: '14/02', videos: [] }
   ]
 }
 
