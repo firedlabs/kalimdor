@@ -9,13 +9,15 @@ function Supporters() {
       src: diolinux,
       alt: 'Logo do Diolinux',
       href: 'https://www.youtube.com/diolinux',
-      isPadding: false
+      isPadding: false,
+      target: '_blank'
     },
     {
       src: negros,
       alt: 'Logo da NegrosDev',
       href: 'https://negros.dev',
-      backgroundColor: 'colorSecond'
+      backgroundColor: 'colorSecond',
+      target: '_blank'
     }
   ]
 
