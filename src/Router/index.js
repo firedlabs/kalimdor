@@ -15,6 +15,7 @@ import UserTypesNew from 'pages/Admin/UserTypesNew'
 import PrivateRouteAdmin from './PrivavateRouteAdmin'
 import Logout from 'pages/Logout'
 import Studio from 'pages/Studio'
+import NewVideo from 'pages/Studio/NewVideo'
 
 const Router = () => {
   ReactGA.initialize('UA-186693543-1')
@@ -40,7 +41,8 @@ const Router = () => {
         />
         <PrivateRouteAdmin path="/admin/user/:login" component={UserEdit} />
 
-        <PrivateRouteAdmin path="/studio" component={Studio} />
+        <PrivateRouteAdmin path="/studio" exact component={Studio} />
+        <PrivateRouteAdmin path="/studio/video/new" component={NewVideo} />
 
         <Route path="/logout" component={Logout} />
         <Route path="/404" component={NotFound} />
