@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import UserTypesService from 'services/UserTypesService'
 
 function useUserTypes() {
-  const columns = ['Nome', 'editar']
+  const columns = ['Nome']
   const [activeModalError, setActiveModalError] = useState(false)
-  const [data, setData] = useState([['carregando...', 'carregando...']])
+  const [data, setData] = useState([['carregando...']])
 
   const actionCloseModalError = () => setActiveModalError(false)
 
@@ -14,12 +13,7 @@ function useUserTypes() {
       (async () => {
         try {
           const { data } = await UserTypesService.getAll()
-          setData(
-            data.map(({ name }) => [
-              name,
-              { as: Link, to: `/admin/user/types/${name}`, content: 'editar' }
-            ])
-          )
+          setData(data.map(({ name }) => [name]))
         } catch (err) {
           setActiveModalError(true)
         }
