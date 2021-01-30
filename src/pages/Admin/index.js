@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ActionCard } from '@firedlabs/design-system'
-import { Actions } from './styles'
+import Actions from 'containers/Actions'
 
 function Admin() {
   return (
