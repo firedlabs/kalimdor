@@ -1,7 +1,15 @@
-import { Title } from '@firedlabs/design-system'
+import { ActionCard } from '@firedlabs/design-system'
+import { Link } from 'react-router-dom'
+import Actions from 'containers/Actions'
 
 function Studio() {
-  return <></>
+  return (
+    <Actions>
+      <ActionCard as={Link} to="/videos">
+        Videos
+      </ActionCard>
+    </Actions>
+  )
 }
 
 export default Studio
