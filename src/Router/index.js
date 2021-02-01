@@ -27,7 +27,8 @@ const Router = () => {
         <WithHeader path="/" exact component={Dashboard} />
         <WithHeader path="/profile" component={Profile} />
         <Route path="/dashboard" component={Dashboard} />
-        <Route path="/event/register" component={CourseRegister} />
+        <Route path="/event/register" exact component={CourseRegister} />
+        <Route path="/event/html-css" exact component={CourseRegister} />
         <PrivateRoute path="/player" component={Player} />
         <PrivateRouteAdmin path="/admin" exact component={Admin} />
         <PrivateRouteAdmin path="/admin/user" exact component={User} />
