@@ -18,7 +18,7 @@ function useFormVideo() {
       setActiveLoading(true)
       await VideoService.save(video)
       setActiveLoading(false)
-      history.push('/')
+      history.push('/video')
     } catch (err) {
       setActiveLoading(false)
       setActiveModalError(true)
