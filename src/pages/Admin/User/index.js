@@ -3,7 +3,13 @@ import ModalError from 'containers/ModalError'
 import useUser from './useUser'
 
 function User() {
-  const { columns, data, activeModalError, actionCloseModalError } = useUser()
+  const {
+    columns,
+    data,
+    activeModalError,
+    actionCloseModalError,
+    amount
+  } = useUser()
 
   return (
     <>
@@ -12,7 +18,7 @@ function User() {
         actionClose={actionCloseModalError}
       />
       <Title big center>
-        Usuários
+        Usuários {amount}
       </Title>
 
       <Table columns={columns} data={data} />
