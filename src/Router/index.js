@@ -17,6 +17,9 @@ import Logout from 'pages/Logout'
 import Studio from 'pages/Studio'
 import NewVideo from 'pages/Studio/NewVideo'
 import Video from 'pages/Studio/Video'
+import Module from 'pages/Studio/Module'
+import ModuleNew from 'pages/Studio/ModuleNew'
+import ModuleEdit from 'pages/Studio/ModuleEdit'
 
 const Router = () => {
   ReactGA.initialize('UA-186693543-1')
@@ -46,6 +49,10 @@ const Router = () => {
         <PrivateRouteAdmin path="/studio" exact component={Studio} />
         <PrivateRouteAdmin path="/studio/video" exact component={Video} />
         <PrivateRouteAdmin path="/studio/video/new" component={NewVideo} />
+
+        <PrivateRouteAdmin path="/studio/module" exact component={Module} />
+        <PrivateRouteAdmin path="/studio/module/new" component={ModuleNew} />
+        <PrivateRouteAdmin path="/studio/module/:id" component={ModuleEdit} />
 
         <Route path="/logout" component={Logout} />
         <Route path="/404" component={NotFound} />

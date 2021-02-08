@@ -12,7 +12,7 @@ const dataFollow = {
   lessons: [
     {
       title: 'Módulo 00',
-      tag: 'novo',
+      tag: '',
       videos: [
         {
           src:
@@ -65,7 +65,201 @@ const dataFollow = {
         }
       ]
     },
-    { title: 'Módulo 01', tag: '08/02', videos: [] },
+    {
+      title: 'Módulo 01',
+      tag: 'Novo',
+      videos: [
+        {
+          src:
+            'https://player.vimeo.com/external/490353357.hd.mp4?s=5ff987902981db01a28edba220cf69274d6ea1db&profile_id=175',
+          title: 'Cria pasta do projeto',
+          poster: 'https://i.vimeocdn.com/video/1048737200.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490353416.hd.mp4?s=b1b35bb8e7d123d3f6341bcd554931f064599d2d&profile_id=175',
+          title: 'Alterar layout no Figma',
+          poster: 'https://i.vimeocdn.com/video/1049413877.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490353732.hd.mp4?s=0e80b16dd9a35636faac4ac2015372aa40a6c842&profile_id=175',
+          title: 'O que é o HTML?',
+          poster: 'https://i.vimeocdn.com/video/1055155625.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490354053.hd.mp4?s=cf6e4aa7404b2d09bdd3df62f47586d5e2a668ac&profile_id=175',
+          title: 'HTML do cabeçalho',
+          poster: 'https://i.vimeocdn.com/video/1055156451.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490354693.hd.mp4?s=0c249509c605ef51790c3f3b7e1ee478693401ce&profile_id=175',
+          title: 'Comentar ou não o código?',
+          poster: 'https://i.vimeocdn.com/video/1055157673.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490354854.hd.mp4?s=6b8185505a59b68a09ae998ca7fd4bac08d6eb47&profile_id=175',
+          title: 'O que falta para o HTML?',
+          poster: 'https://i.vimeocdn.com/video/1055158894.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490355165.hd.mp4?s=4dd2e69b10a8cbf2335cd9b13fa4a53d8bd423e5&profile_id=175',
+          title: 'Atributo global no HTML',
+          poster: 'https://i.vimeocdn.com/video/1055160159.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490355311.hd.mp4?s=b79ea4d9e5ea22c174e99101d1308c2fc68cfc98&profile_id=175',
+          title: 'HTML feliz com Emmet',
+          poster: 'https://i.vimeocdn.com/video/1055161137.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490355676.hd.mp4?s=6c59dabc3d43f6130323ed39c34c484b4c4a47d3&profile_id=175',
+          title: 'O que é CSS?',
+          poster: 'https://i.vimeocdn.com/video/1055162417.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490355817.hd.mp4?s=fd3022b2be667cd8fdb148789ecb834070b27d8e&profile_id=175',
+          title: 'Cor de fundo no header',
+          poster: 'https://i.vimeocdn.com/video/1055163835.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490356851.hd.mp4?s=65b906ecc4a3f3a11cb63f931c0e6335acf6c7d3&profile_id=175',
+          title: 'Sistema de cores',
+          poster: 'https://i.vimeocdn.com/video/1055164918.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490357235.hd.mp4?s=4557b43a55fa68d0ed03239eaa0d55e94f857185&profile_id=175',
+          title: 'Reset CSS',
+          poster: 'https://i.vimeocdn.com/video/1055165884.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490357405.hd.mp4?s=8df48469d8e9f707757343f0e7e230973ce9c5ca&profile_id=175',
+          title: 'Reset CSS da comunidade',
+          poster: 'https://i.vimeocdn.com/video/1055166866.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490357568.hd.mp4?s=4e7a9624bc226eb424a94c2d0acf5ab7c64f921c&profile_id=175',
+          title: 'CSS do menu de navegação',
+          poster: 'https://i.vimeocdn.com/video/1055168024.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490357928.hd.mp4?s=89b0b7c989cee0b66e54a8d8385b599e43da5541&profile_id=175',
+          title: 'Serif e sans-serif',
+          poster: 'https://i.vimeocdn.com/video/1055169216.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490358078.hd.mp4?s=d4c59bd17dc4f6d6b21de896a0a8cf0955c61da3&profile_id=175',
+          title: 'CSS do botão',
+          poster: 'https://i.vimeocdn.com/video/1055171623.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490358540.hd.mp4?s=b7324bb501c6fe0de1de90eea0c13cf202238742&profile_id=175',
+          title: 'Base sobre display',
+          poster: 'https://i.vimeocdn.com/video/1055172464.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490358838.hd.mp4?s=e77ac8e24769881e8a03f3db3c132c4fb04bfa63&profile_id=175',
+          title: 'Propriedade display: inline',
+          poster: 'https://i.vimeocdn.com/video/1055173213.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490359454.hd.mp4?s=83bf9a0a126a9e0d2ff96606c3fc941a9e7e18a2&profile_id=175',
+          title: 'Propriedade display: block',
+          poster: 'https://i.vimeocdn.com/video/1055174319.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490359696.hd.mp4?s=9a51a4b53d7cf22772e5647b03313c8ec676a056&profile_id=175',
+          title: 'Propriedade display: inline-block',
+          poster: 'https://i.vimeocdn.com/video/1055175133.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490500684.hd.mp4?s=c3a35a74317bbf6c3250f9816875ca559d9b17e0&profile_id=175',
+          title: 'Diferença entre margin e padding',
+          poster: 'https://i.vimeocdn.com/video/1055176870.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490501181.hd.mp4?s=2b1908a5ae2eaa482ccaa4150d05a667d7db383d&profile_id=175',
+          title: 'Forma resumida e específica',
+          poster: 'https://i.vimeocdn.com/video/1055177737.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490501752.hd.mp4?s=c19411f66dd775982444e4e00e0f982daec6699b&profile_id=175',
+          title: '1px no CSS',
+          poster: 'https://i.vimeocdn.com/video/1055178638.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490502008.hd.mp4?s=696827aa5b8574cd7cda1f83bed0857598f161b6&profile_id=175',
+          title: 'Quadrado items do menu',
+          poster: 'https://i.vimeocdn.com/video/1055179344.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490502526.hd.mp4?s=5d4d6db273135db18ff7f5322fda56cee9034cac&profile_id=175',
+          title: 'Finalizar CSS do header',
+          poster: 'https://i.vimeocdn.com/video/1055180525.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490504020.hd.mp4?s=4ccf141017bea9cababe86afd3e147642ce5c5d1&profile_id=175',
+          title: 'Revisão',
+          poster: 'https://i.vimeocdn.com/video/1055181633.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490509221.hd.mp4?s=336aa02c469c0b460705a2818fe8fa5e12b4ade5&profile_id=175',
+          title: 'Desafios top top top',
+          poster: 'https://i.vimeocdn.com/video/1055182885.jpg',
+          type: 'video/mp4'
+        }
+      ]
+    },
     { title: 'Módulo 02', tag: '09/02', videos: [] },
     { title: 'Módulo 03', tag: '10/02', videos: [] },
     { title: 'Módulo 04', tag: '11/02', videos: [] },

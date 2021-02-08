@@ -1,7 +1,7 @@
 import { Form, Field, Button } from '@firedlabs/design-system'
-import Checkboxs from 'containers/Checkboxs'
 import FakeLoadingScreen from 'containers/FakeLoadingScreen'
 import ModalError from 'containers/ModalError'
+import PatentTwitch from 'containers/PatentTwitch'
 import useFormVideo from './useFormVideo'
 
 function FormVideo() {
@@ -60,31 +60,7 @@ function FormVideo() {
           register={register}
         />
 
-        <Checkboxs>
-          <Field.Checkbox
-            name="viewer"
-            active={watch('viewer')}
-            register={register}
-          >
-            Viewer
-          </Field.Checkbox>
-          <Field.Checkbox
-            name="follow"
-            register={register}
-            active={watch('follow')}
-          >
-            Follow
-          </Field.Checkbox>
-          <Field.Checkbox name="vip" register={register} active={watch('vip')}>
-            Vip
-          </Field.Checkbox>
-          <Field.Checkbox name="sub" register={register} active={watch('sub')}>
-            Sub
-          </Field.Checkbox>
-          <Field.Checkbox name="mod" register={register} active={watch('mod')}>
-            Mod
-          </Field.Checkbox>
-        </Checkboxs>
+        <PatentTwitch watch={watch} register={register} />
 
         <Button medium type="submit">
           Enviar

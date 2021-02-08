@@ -8,6 +8,10 @@ function Studio() {
       <ActionCard as={Link} to="/studio/video">
         Videos
       </ActionCard>
+
+      <ActionCard as={Link} to="/studio/module">
+        Módulos
+      </ActionCard>
     </Actions>
   )
 }

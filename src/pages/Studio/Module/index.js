@@ -1,10 +1,10 @@
 import { Title, Table, FloatingButton } from '@firedlabs/design-system'
-import { Link } from 'react-router-dom'
 import ModalError from 'containers/ModalError'
-import useVideo from './useVideo'
+import { Link } from 'react-router-dom'
+import useModule from './useModule'
 
-function Video() {
-  const { columns, data, activeModalError, actionCloseModalError } = useVideo()
+function Module() {
+  const { columns, data, activeModalError, actionCloseModalError } = useModule()
 
   return (
     <>
@@ -14,15 +14,16 @@ function Video() {
       />
 
       <Title center big>
-        Todos os vídeos
+        Todos os Módulos
       </Title>
+
       <Table columns={columns} data={data} />
 
-      <FloatingButton as={Link} to="/studio/video/new">
+      <FloatingButton as={Link} to="/studio/module/new">
         +
       </FloatingButton>
     </>
   )
 }
 
-export default Video
+export default Module
