@@ -5,6 +5,10 @@ import Actions from 'containers/Actions'
 function Studio() {
   return (
     <Actions>
+      <ActionCard as={Link} to="/studio/course">
+        Curso
+      </ActionCard>
+
       <ActionCard as={Link} to="/studio/video">
         Videos
       </ActionCard>

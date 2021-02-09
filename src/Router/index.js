@@ -20,6 +20,8 @@ import Video from 'pages/Studio/Video'
 import Module from 'pages/Studio/Module'
 import ModuleNew from 'pages/Studio/ModuleNew'
 import ModuleEdit from 'pages/Studio/ModuleEdit'
+import Course from 'pages/Studio/Course'
+import NewCourse from 'pages/Studio/NewCourse'
 
 const Router = () => {
   ReactGA.initialize('UA-186693543-1')
@@ -53,6 +55,9 @@ const Router = () => {
         <PrivateRouteAdmin path="/studio/module" exact component={Module} />
         <PrivateRouteAdmin path="/studio/module/new" component={ModuleNew} />
         <PrivateRouteAdmin path="/studio/module/:id" component={ModuleEdit} />
+
+        <PrivateRouteAdmin path="/studio/course" exact component={Course} />
+        <PrivateRouteAdmin path="/studio/course/new" component={NewCourse} />
 
         <Route path="/logout" component={Logout} />
         <Route path="/404" component={NotFound} />

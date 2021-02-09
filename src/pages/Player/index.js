@@ -67,7 +67,7 @@ const dataFollow = {
     },
     {
       title: 'Módulo 01',
-      tag: 'Novo',
+      tag: '',
       videos: [
         {
           src:
@@ -260,7 +260,124 @@ const dataFollow = {
         }
       ]
     },
-    { title: 'Módulo 02', tag: '09/02', videos: [] },
+    {
+      title: 'Módulo 02',
+      tag: 'Novo',
+      videos: [
+        {
+          src:
+            'https://player.vimeo.com/external/490516639.hd.mp4?s=cd445677ef02cd02a66e3c777e25e4788a1ab708&profile_id=175',
+          title: 'Mudar logo e cores',
+          poster: 'https://i.vimeocdn.com/video/1056070600.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490521734.hd.mp4?s=9f2efed1d9cf8fc7d740fb94c755d2a7da94504d&profile_id=175',
+          title: 'Hover no botão',
+          poster: 'https://i.vimeocdn.com/video/1056071872.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490932943.hd.mp4?s=f9ce7f63771ca7db3b9d36b31d110845131a13f1&profile_id=175',
+          title: 'O que é Git?',
+          poster: 'https://i.vimeocdn.com/video/1056074020.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490944645.hd.mp4?s=23e2e623bf5fce9fff87db773452d7a68d10f92e&profile_id=175',
+          title: 'Como instalar o Git?',
+          poster: 'https://i.vimeocdn.com/video/1056075091.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490940674.hd.mp4?s=9214eb056c893200f79aa6b31a55af6829910136&profile_id=175',
+          title: 'O que é repositório?',
+          poster: 'https://i.vimeocdn.com/video/1056076106.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490952751.hd.mp4?s=5d067b08208ed8103dab44ee359ef79ec86f7650&profile_id=175',
+          title: 'Guardando estado do arquivo',
+          poster: 'https://i.vimeocdn.com/video/1056077434.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490955749.hd.mp4?s=6d24583519b357f71127a0ec64c2f785e26e64e3&profile_id=175',
+          title: 'Mensagem errda no commit',
+          poster: 'https://i.vimeocdn.com/video/1056078871.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490962934.hd.mp4?s=586b920ee1022dbfff9d53d60c7325f9444a9863&profile_id=175',
+          title: 'O que é GitHub?',
+          poster: 'https://i.vimeocdn.com/video/1056080000.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490969029.hd.mp4?s=bb4731e983bb6e46e481ee185b2c617bc09f93f0&profile_id=175',
+          title: 'Criar repositório remoto',
+          poster: 'https://i.vimeocdn.com/video/1056086555.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490984076.hd.mp4?s=e7f0c381f5083c9dbdd8bcce4e9c5f4e012cd201&profile_id=175',
+          title: 'Enviar pro GitHub',
+          poster: 'https://i.vimeocdn.com/video/1056088115.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/490984480.hd.mp4?s=a136007449452abcdeebc0b5c1eb4c8db3195cff&profile_id=175',
+          title: 'Outra pessoa com seu código',
+          poster: 'https://i.vimeocdn.com/video/1056090984.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/491355937.hd.mp4?s=dd04f5b70c6af9f40bb0e6899d597481a1aeb69b&profile_id=175',
+          title: 'O que é GitHub Pages',
+          poster: 'https://i.vimeocdn.com/video/1056092191.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/491376603.hd.mp4?s=309d181ac3aab2e2a55b410b4b01a8b8e75ca983&profile_id=175',
+          title: 'Cria site no GH Pages',
+          poster: 'https://i.vimeocdn.com/video/1056092971.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/491377243.hd.mp4?s=276a4ab007c0b403e952d3dd4bba998b2d451aea&profile_id=175',
+          title: 'Projeto no GH Pages',
+          poster: 'https://i.vimeocdn.com/video/1056093602.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/491383744.hd.mp4?s=989aa5f27d2e491749996f1ce1f2d749c23c1342&profile_id=175',
+          title: 'Revisão',
+          poster: 'https://i.vimeocdn.com/video/1056094939.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/491387700.hd.mp4?s=c11f727a3efce1a20528ad3d6667b31c40d16de2&profile_id=175',
+          title: 'Desafios top top top',
+          poster: 'https://i.vimeocdn.com/video/1056096190.jpg',
+          type: 'video/mp4'
+        }
+      ]
+    },
     { title: 'Módulo 03', tag: '10/02', videos: [] },
     { title: 'Módulo 04', tag: '11/02', videos: [] },
     { title: 'Módulo 05', tag: '12/02', videos: [] },

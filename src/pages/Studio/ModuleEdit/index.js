@@ -8,7 +8,7 @@ function ModuleEdit() {
   return (
     <>
       <Title center big>
-        Editar Módulo
+        Editar Módulo - erro no checkbox
       </Title>
 
       <FormModule id={id} />
