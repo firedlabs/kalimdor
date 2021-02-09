@@ -1,4 +1,5 @@
 import { Container, Form, Field, Button } from '@firedlabs/design-system'
+import FakeLoadingScreen from 'containers/FakeLoadingScreen'
 import ModalError from 'containers/ModalError'
 import PatentTwitch from 'containers/PatentTwitch'
 import useFormCourse from './useFormCourse'
@@ -11,7 +12,8 @@ function FormCourse() {
     watch,
     modules,
     activeModalError,
-    actionCloseModalError
+    actionCloseModalError,
+    activeLoading
   } = useFormCourse()
 
   return (
@@ -20,6 +22,8 @@ function FormCourse() {
         active={activeModalError}
         actionClose={actionCloseModalError}
       />
+
+      <FakeLoadingScreen active={activeLoading} noPage />
 
       <Form onSubmit={handleSubmit(newCourse)} biggest>
         <Field.Text
@@ -30,7 +34,7 @@ function FormCourse() {
         />
 
         <Field.Text
-          name="nameShort"
+          name="shortName"
           label="Nome curto"
           register={register}
           placeholder="html-css"

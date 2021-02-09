@@ -5,7 +5,7 @@ function Course() {
   return (
     <>
       <Title center big>
-        Course
+        Curso
       </Title>
 
       <FloatingButton as={Link} to="/studio/course/new">
