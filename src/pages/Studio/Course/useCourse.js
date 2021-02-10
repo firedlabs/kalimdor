@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import CourseService from 'services/CourseService'
 
 function useCourse() {
@@ -11,9 +12,10 @@ function useCourse() {
       (async () => {
         try {
           const res = await CourseService.getAll()
-          const { courses } = res.body
-
-          console.log(res.data)
+          const courses = res.data.courses.map(({ name, id }) => [
+            name,
+            { as: Link, to: `/studio/course/${id}`, content: 'editar' }
+          ])
 
           setData(courses)
         } catch (err) {
