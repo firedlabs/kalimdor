@@ -262,7 +262,7 @@ const dataFollow = {
     },
     {
       title: 'Módulo 02',
-      tag: 'Novo',
+      tag: '',
       videos: [
         {
           src:
@@ -378,7 +378,201 @@ const dataFollow = {
         }
       ]
     },
-    { title: 'Módulo 03', tag: '10/02', videos: [] },
+    {
+      title: 'Módulo 03',
+      tag: 'Novo',
+      videos: [
+        {
+          src:
+            'https://player.vimeo.com/external/497204594.hd.mp4?s=e1d8f22574d064f9abf7d807b9befa104195f4c9&profile_id=175',
+          title: 'Criar HTML do Title',
+          poster: 'https://i.vimeocdn.com/video/1057000399.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497214977.hd.mp4?s=b80308017a2bd3349e0bfcac2da24165bed57d2f&profile_id=175',
+          title: 'Cria base do CSS do Title',
+          poster: 'https://i.vimeocdn.com/video/1057002219.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497220022.hd.mp4?s=03f43f9c4be3118c44964971a35e52eb9b6aadcf&profile_id=175',
+          title: 'Sombra no Title',
+          poster: 'https://i.vimeocdn.com/video/1057003143.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497225948.hd.mp4?s=996b3083ce8ef4188813157817252fb89b38fdcb&profile_id=175',
+          title: 'Organiza o CSS do Title',
+          poster: 'https://i.vimeocdn.com/video/1057004369.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497274218.hd.mp4?s=a9eb9a082d6485c90c18a907ec8dffa012831b29&profile_id=175',
+          title: 'Commit do component Title',
+          poster: 'https://i.vimeocdn.com/video/1057005470.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497278793.hd.mp4?s=5ed0516ce208725ff0f6ce765ca318776b19e624&profile_id=175',
+          title: 'Cria HTML do Subtitle',
+          poster: 'https://i.vimeocdn.com/video/1057011264.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510608909.hd.mp4?s=a79150737e0e6544314f7a1e40eee676ec67aa19&profile_id=175',
+          title: 'Cria CSS do Subtitle',
+          poster: 'https://i.vimeocdn.com/video/1057012309.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497290644.hd.mp4?s=aeb53a95201729cd48a92e3738c741136eb2dbd1&profile_id=175',
+          title: 'Commit do component Subtitle',
+          poster: 'https://i.vimeocdn.com/video/1057013232.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510609235.hd.mp4?s=36f316935ed388596f180954a168c607d76d72e6&profile_id=175',
+          title: 'Cria HTML do Box',
+          poster: 'https://i.vimeocdn.com/video/1057014211.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497312387.hd.mp4?s=59afad83032b7c0b0f667873dc29078d67c87d78&profile_id=175',
+          title: 'Cria CSS do Box',
+          poster: 'https://i.vimeocdn.com/video/1057015204.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497312564.hd.mp4?s=a253f4b64d56db44ada8b45416c2ca3c166714ac&profile_id=175',
+          title: 'Adiciona Title e Subtitle',
+          poster: 'https://i.vimeocdn.com/video/1057016025.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510609657.hd.mp4?s=3b77856ad07cef425ad61809ea5ceb1ebc21aea5&profile_id=175',
+          title: 'Commit do component Box',
+          poster: 'https://i.vimeocdn.com/video/1057017333.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497578229.hd.mp4?s=317391ddb946baeed31f990d27a1cba1f539c1a3&profile_id=175',
+          title: 'Isola o código do Button',
+          poster: 'https://i.vimeocdn.com/video/1057018309.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497589954.hd.mp4?s=61a910804328c35ce26168ede3984ee9a92700e6&profile_id=175',
+          title: 'Usa class no Button',
+          poster: 'https://i.vimeocdn.com/video/1057019104.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497596713.hd.mp4?s=886682a9abdd297e47d51c5c33579cdbac3e8cba&profile_id=175',
+          title: 'Quando usa o seletor de tag',
+          poster: 'https://i.vimeocdn.com/video/1057019925.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497598973.hd.mp4?s=e3893ee67dd1156af1070d24f01bf89358d8f03c&profile_id=175',
+          title: 'Quando usa o seletor de id',
+          poster: 'https://i.vimeocdn.com/video/1057021031.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/497604102.hd.mp4?s=7617302401b1f2dd03eb1b2479d0bdfe2c9c94e9&profile_id=175',
+          title: 'Quando usa o seletor de class',
+          poster: 'https://i.vimeocdn.com/video/1057021798.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/507505616.hd.mp4?s=40ec61ee9bea711cd56c1cbb86dbc48cca9de690&profile_id=174',
+          title: 'Commit do component Button',
+          poster: 'https://i.vimeocdn.com/video/1057022639.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/507513508.hd.mp4?s=94d5839392c9c5507ec9e6378be06b931a6c12ea&profile_id=174',
+          title: 'Commit da refatoração',
+          poster: 'https://i.vimeocdn.com/video/1057023403.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/508601003.hd.mp4?s=491b22e4525c8789a5381660c33de3ca50b3ca1e&profile_id=174',
+          title: 'Adicionar imagem de fundo',
+          poster: 'https://i.vimeocdn.com/video/1057024234.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/508607092.hd.mp4?s=b78bb84a0e500704881f59132605daa31c31f559&profile_id=174',
+          title: 'Diferença entre div e section',
+          poster: 'https://i.vimeocdn.com/video/1057025007.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/508617212.hd.mp4?s=4aa70fc43107d9ba4c8ec11215439b289490803f&profile_id=174',
+          title: 'Cria component Banner',
+          poster: 'https://i.vimeocdn.com/video/1057026370.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/508628731.hd.mp4?s=3a636f1a1a12624c3a5450157c6b4bd05f04a79b&profile_id=174',
+          title: 'Alinha títulos e botões',
+          poster: 'https://i.vimeocdn.com/video/1057029941.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/509298307.hd.mp4?s=e917f896b2ed9876d824db9ccf0fbbe680cc3826&profile_id=174',
+          title: 'Adiciona respiro no Box',
+          poster: 'https://i.vimeocdn.com/video/1057030829.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/509300362.hd.mp4?s=e86606d7793b857861ead977b93bb53420dac181&profile_id=174',
+          title: 'Commit do Banner',
+          poster: 'https://i.vimeocdn.com/video/1057031922.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/509302654.hd.mp4?s=09cec6df50e9d36094368e7037a90df543423073&profile_id=174',
+          title: 'Revisão',
+          poster: 'https://i.vimeocdn.com/video/1057033185.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/509304962.hd.mp4?s=f78ac4e4a14f04a9a00b89c9af1904eb66de05bb&profile_id=174',
+          title: 'Desafios top top top',
+          poster: 'https://i.vimeocdn.com/video/1057034754.jpg',
+          type: 'video/mp4'
+        }
+      ]
+    },
     { title: 'Módulo 04', tag: '11/02', videos: [] },
     { title: 'Módulo 05', tag: '12/02', videos: [] },
     { title: 'Módulo 06', tag: '13/02', videos: [] },
