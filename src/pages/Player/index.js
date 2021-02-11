@@ -309,7 +309,7 @@ const dataFollow = {
         {
           src:
             'https://player.vimeo.com/external/490955749.hd.mp4?s=6d24583519b357f71127a0ec64c2f785e26e64e3&profile_id=175',
-          title: 'Mensagem errda no commit',
+          title: 'Mensagem errada no commit',
           poster: 'https://i.vimeocdn.com/video/1056078871.jpg',
           type: 'video/mp4'
         },
@@ -380,7 +380,7 @@ const dataFollow = {
     },
     {
       title: 'Módulo 03',
-      tag: 'Novo',
+      tag: '',
       videos: [
         {
           src:
@@ -573,7 +573,89 @@ const dataFollow = {
         }
       ]
     },
-    { title: 'Módulo 04', tag: '11/02', videos: [] },
+    {
+      title: 'Módulo 04',
+      tag: 'Novo',
+      videos: [
+        {
+          src:
+            'https://player.vimeo.com/external/509310469.hd.mp4?s=71e3b87cd7a3cc0d12a758860c34348f299fbd0f&profile_id=174',
+          title: 'Variação do component Title',
+          poster: 'https://i.vimeocdn.com/video/1057931896.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/509313172.hd.mp4?s=a31acdb9faabfae1e3e19135cdbd5473c612821b&profile_id=174',
+          title: 'Commit da variação',
+          poster: 'https://i.vimeocdn.com/video/1057934569.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/509315335.hd.mp4?s=da79eb0a5f2c8d45b2a3da503f4da9024e516746&profile_id=174',
+          title: 'Criando component Section',
+          poster: 'https://i.vimeocdn.com/video/1057936387.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510909561.hd.mp4?s=f675cf64e2fc4ed315af3092b7bb97c4dc4b2fcd&profile_id=174',
+          title: 'Commit do component Section',
+          poster: 'https://i.vimeocdn.com/video/1057942047.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510920663.hd.mp4?s=36a11075f837037a1c40ec372d751e0892a75d0e&profile_id=174',
+          title: 'Cria component Skill',
+          poster: 'https://i.vimeocdn.com/video/1057945344.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510920564.hd.mp4?s=aa1d1b202743237a79da7e4ba6d16fe34fbdf7da&profile_id=174',
+          title: 'Cria CSS do Skill',
+          poster: 'https://i.vimeocdn.com/video/1057949305.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510925063.hd.mp4?s=e44bcaca3ee14d37fe9e2dc5234d276e887d550a&profile_id=174',
+          title: 'Title do lado do Icon',
+          poster: 'https://i.vimeocdn.com/video/1057953558.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510947676.hd.mp4?s=ac51ac84e0807ad3d09a73c97a9508b394a55ae6&profile_id=174',
+          title: 'Component progress-bar',
+          poster: 'https://i.vimeocdn.com/video/1057956781.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510952425.hd.mp4?s=f856edc68ed95cef7063fa6c4e2fa4e6f630a174&profile_id=174',
+          title: 'Posicionar bar e title',
+          poster: 'https://i.vimeocdn.com/video/1057958685.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510952518.hd.mp4?s=9c89f3bdeac41cbad3ab36a5de8ecd70b0f44baf&profile_id=174',
+          title: 'Commits e mais commits',
+          poster: 'https://i.vimeocdn.com/video/1057961801.jpg',
+          type: 'video/mp4'
+        },
+        {
+          src:
+            'https://player.vimeo.com/external/510954710.hd.mp4?s=f403f8bd5e02aaf589393189edada09944a28c80&profile_id=174',
+          title: 'Mais 7 skill-tec',
+          poster: 'https://i.vimeocdn.com/video/1057963723.jpg',
+          type: 'video/mp4'
+        }
+      ]
+    },
     { title: 'Módulo 05', tag: '12/02', videos: [] },
     { title: 'Módulo 06', tag: '13/02', videos: [] },
     { title: 'Módulo 07', tag: '14/02', videos: [] }
