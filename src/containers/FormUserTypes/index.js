@@ -10,7 +10,9 @@ function FormUserTypes() {
     newUserTypes,
     activeModalError,
     actionCloseModalError,
-    activeLoading
+    activeLoading,
+    watch,
+    permissions
   } = useFormUserTypes()
 
   return (
@@ -35,6 +37,21 @@ function FormUserTypes() {
           register={register}
           placeholder="Descreva o novo tipo de usuário"
         />
+
+        <Field.Fieldset legend="Permissões">
+          {permissions.map(({ id, name }) => (
+            <Field.Checkbox
+              key={id}
+              name={`permissions[${id}]`}
+              register={register}
+              active={watch(`permissions[${id}]`)}
+              value={true}
+              small
+            >
+              {name}
+            </Field.Checkbox>
+          ))}
+        </Field.Fieldset>
 
         <Button type="submit" medium>
           Enviar

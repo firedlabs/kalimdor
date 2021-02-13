@@ -1,13 +1,17 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { useHistory } from 'react-router-dom'
+import UserPermissionService from 'services/UserPermissionService'
 import UserTypesService from 'services/UserTypesService'
 
 function useFormUserTypes() {
   const history = useHistory()
   const [activeModalError, setActiveModalError] = useState()
   const [activeLoading, setActiveLoading] = useState()
-  const { register, handleSubmit } = useForm({
+  const [permissions, setPermissions] = useState([
+    { name: 'Carregando...', id: 'carregando' }
+  ])
+  const { register, handleSubmit, watch } = useForm({
     defaultValues: { name: '', description: '' }
   })
 
@@ -23,6 +27,27 @@ function useFormUserTypes() {
     }
   }
 
+  useEffect(
+    () =>
+      (async () => {
+        try {
+          const res = await UserPermissionService.getAll()
+          const permissions = res.data.userPermissions.map(({ name, id }) => ({
+            name,
+            id
+          }))
+
+          console.log('permissions', permissions)
+
+          setPermissions(permissions)
+        } catch (err) {
+          setActiveLoading(false)
+          setActiveModalError(true)
+        }
+      })(),
+    []
+  )
+
   const actionCloseModalError = () => setActiveModalError(false)
 
   return {
@@ -31,7 +56,9 @@ function useFormUserTypes() {
     newUserTypes,
     activeModalError,
     actionCloseModalError,
-    activeLoading
+    activeLoading,
+    watch,
+    permissions
   }
 }
 

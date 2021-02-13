@@ -684,7 +684,145 @@ function usePlayer() {
           }
         ]
       },
-      { title: 'Módulo 05', tag: '13/02', videos: [] },
+      {
+        title: 'Módulo 05',
+        tag: '13/02',
+        videos: [
+          {
+            src:
+              'https://player.vimeo.com/external/511521564.hd.mp4?s=640fbb2ba0040982a204bce81294289690deb249&profile_id=175',
+            title: 'HTML do card-project',
+            poster: 'https://i.vimeocdn.com/video/1060078736.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511532250.hd.mp4?s=b4d13a20506e6890a016430103befddc058781dc&profile_id=175',
+            title: 'CSS do card-project',
+            poster: 'https://i.vimeocdn.com/video/1060079877.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511545335.hd.mp4?s=470a161a467c078c98bd87bf5363887e3d7bc68d&profile_id=175',
+            title: 'Variação card-project',
+            poster: 'https://i.vimeocdn.com/video/1060080659.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511551397.hd.mp4?s=93979d5024d3f85748a77fea23e7eed85d525974&profile_id=175',
+            title: 'Commit card-project',
+            poster: 'https://i.vimeocdn.com/video/1060081268.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511566546.hd.mp4?s=3622e12d11b1fbfb34f062e32f9851f0f693a8b2&profile_id=175',
+            title: 'Variação da section',
+            poster: 'https://i.vimeocdn.com/video/1060081705.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511569735.hd.mp4?s=2100739c2a02ffa1e8a65ed4db13fe7f47793ac2&profile_id=175',
+            title: 'Commit da section',
+            poster: 'https://i.vimeocdn.com/video/1060082701.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511575176.hd.mp4?s=781f582c1f3b634e3b8aa397e7c79e001d7f941b&profile_id=175',
+            title: 'Cria wrapper-card',
+            poster: 'https://i.vimeocdn.com/video/1060083136.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511584067.hd.mp4?s=52760c8ac3f40f4cd680504e11f2dd3101f8bafc&profile_id=175',
+            title: 'Commit wrapper-card',
+            poster: 'https://i.vimeocdn.com/video/1060083594.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511587820.hd.mp4?s=bc65e864a0cf1aa0955442030fa625bd7549fd60&profile_id=175',
+            title: 'Links nos projetos',
+            poster: 'https://i.vimeocdn.com/video/1060084884.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/512063532.hd.mp4?s=c5efae85550a7efcc720070c2f843c0dda648dac&profile_id=175',
+            title: 'Commit dos links',
+            poster: 'https://i.vimeocdn.com/video/1060087295.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511596639.hd.mp4?s=a979db3291f1c8faf540db58a12c4171bcce6c7a&profile_id=175',
+            title: 'Refatoração action',
+            poster: 'https://i.vimeocdn.com/video/1060086384.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511610953.hd.mp4?s=d2dc1cea73d54575c6ff49dcdb1bdefd6ce638c9&profile_id=175',
+            title: 'Refatoração banner',
+            poster: 'https://i.vimeocdn.com/video/1060086899.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511611286.hd.mp4?s=1efb5eab484f19a95e21675293eaa25f123f6073&profile_id=175',
+            title: 'Refatoração box',
+            poster: 'https://i.vimeocdn.com/video/1060087904.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511622626.hd.mp4?s=b3e40d5d91fa318cfc415482177b7f0b7ffaee15&profile_id=175',
+            title: 'Refatoração button',
+            poster: 'https://i.vimeocdn.com/video/1060088312.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511633016.hd.mp4?s=f9a8fce2dee870b4f9b0807e553673c71b15b3c4&profile_id=175',
+            title: 'Refatoração header',
+            poster: 'https://i.vimeocdn.com/video/1060089250.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511633151.hd.mp4?s=d6bd5992e43fab45a1db76d392da4e5a13ea27d8&profile_id=175',
+            title: 'Refatoração section',
+            poster: 'https://i.vimeocdn.com/video/1060089250.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511637831.hd.mp4?s=fb0616e2f5bbbf8a9f049fa8a364e3fac64fec71&profile_id=175',
+            title: 'Refatoração subtitle',
+            poster: 'https://i.vimeocdn.com/video/1060090387.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511647356.hd.mp4?s=5bd53fe103564e9a904a6811bbc79fe396f3d75b&profile_id=175',
+            title: 'Revisão',
+            poster: 'https://i.vimeocdn.com/video/1060091241.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511647674.hd.mp4?s=d5ca4e0ec8d460538ec08a8c71d0fdea1acea45b&profile_id=175',
+            title: 'Desafios top top top',
+            poster: 'https://i.vimeocdn.com/video/1060091764.jpg',
+            type: 'video/mp4'
+          }
+        ]
+      },
       { title: 'Módulo 06', tag: '14/02', videos: [] },
       { title: 'Módulo 07', tag: '15/02', videos: [] }
     ]
