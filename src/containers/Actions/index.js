@@ -7,6 +7,10 @@ const Actions = styled(Container)`
   flex-wrap: wrap;
   justify-content: center;
 
+  & > ${ActionCardStyles} {
+    margin-bottom: var(--gap-big);
+  }
+
   & > ${ActionCardStyles}:not(:last-child) {
     margin-right: var(--gap-big);
   }

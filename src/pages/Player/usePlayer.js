@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 import CourseService from 'services/CourseService'
-import UserService from 'services/UserService'
 
 function usePlayer() {
   const dataFollow = {
@@ -690,21 +690,14 @@ function usePlayer() {
       { title: 'Módulo 07', tag: '15/02', videos: [] }
     ]
   }
-
-  const dataSub = dataFollow
-
   const [data, setData] = useState(dataFollow)
   const [lessonActive, setLessonActive] = useState('Módulo 00')
+  const history = useHistory()
 
   useEffect(
     () =>
       (async () => {
         try {
-          await UserService.hasSubTwitch()
-          setData(dataSub)
-
-          setLessonActive('Módulo 00')
-        } catch (err) {
           setData(dataFollow)
 
           const res = await CourseService.getToPlayer()
@@ -712,6 +705,8 @@ function usePlayer() {
           console.log('courseToPlayer', courseToPlayer)
 
           setLessonActive('Módulo 00')
+        } catch (err) {
+          history.push('/404')
         }
       })(),
     []

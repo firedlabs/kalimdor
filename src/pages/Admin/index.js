@@ -12,6 +12,10 @@ function Admin() {
       <ActionCard as={Link} to="/admin/user/types">
         Tipos de Usuário
       </ActionCard>
+
+      <ActionCard as={Link} to="/admin/user/permission">
+        Permissões de Usuário
+      </ActionCard>
     </Actions>
   )
 }
