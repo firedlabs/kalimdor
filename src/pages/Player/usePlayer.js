@@ -664,7 +664,7 @@ function usePlayer() {
           {
             src:
               'https://player.vimeo.com/external/511320474.hd.mp4?s=5817b1a7508dc91200848b19bedf321c7b2238a8&profile_id=175',
-            title: 'Cria wrapper-kill',
+            title: 'Cria wrapper-skill',
             poster: 'https://i.vimeocdn.com/video/1059424700.jpg',
             type: 'video/mp4'
           },

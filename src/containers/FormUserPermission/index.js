@@ -22,7 +22,7 @@ function FormUserPermission() {
 
       <FakeLoadingScreen active={activeLoading} noPage />
 
-      <Form onSubmit={handleSubmit(newUserPermission)}>
+      <Form onSubmit={handleSubmit(newUserPermission)} biggest>
         <Field.Text
           label="Nome"
           name="name"
