@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-import CourseService from 'services/CourseService'
 
 function usePlayer() {
   const dataFollow = {
@@ -699,10 +698,6 @@ function usePlayer() {
       (async () => {
         try {
           setData(dataFollow)
-
-          const res = await CourseService.getToPlayer()
-          const courseToPlayer = res.data
-          console.log('courseToPlayer', courseToPlayer)
 
           setLessonActive('Módulo 00')
         } catch (err) {
