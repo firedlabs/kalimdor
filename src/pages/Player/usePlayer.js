@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import CourseService from 'services/CourseService'
 import UserService from 'services/UserService'
 
 function usePlayer() {
@@ -653,12 +654,40 @@ function usePlayer() {
             title: 'Mais 7 skill-tec',
             poster: 'https://i.vimeocdn.com/video/1057963723.jpg',
             type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511309184.hd.mp4?s=241ec3a8603a77f135302df28f9d29134e2a8bf0&profile_id=175',
+            title: 'Bug no icon',
+            poster: 'https://i.vimeocdn.com/video/1059422210.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511320474.hd.mp4?s=5817b1a7508dc91200848b19bedf321c7b2238a8&profile_id=175',
+            title: 'Cria wrapper-kill',
+            poster: 'https://i.vimeocdn.com/video/1059424700.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511332632.hd.mp4?s=cb087d1916fca7a6be78931533b1823caff80076&profile_id=175',
+            title: 'Revisão',
+            poster: 'https://i.vimeocdn.com/video/1059426485.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/511337735.hd.mp4?s=770475190691a2627b2658d278c2983a4be45109&profile_id=175',
+            title: 'Desafios top top top',
+            poster: 'https://i.vimeocdn.com/video/1059427529.jpg',
+            type: 'video/mp4'
           }
         ]
       },
-      { title: 'Módulo 05', tag: '12/02', videos: [] },
-      { title: 'Módulo 06', tag: '13/02', videos: [] },
-      { title: 'Módulo 07', tag: '14/02', videos: [] }
+      { title: 'Módulo 05', tag: '13/02', videos: [] },
+      { title: 'Módulo 06', tag: '14/02', videos: [] },
+      { title: 'Módulo 07', tag: '15/02', videos: [] }
     ]
   }
 
@@ -672,12 +701,16 @@ function usePlayer() {
       (async () => {
         try {
           await UserService.hasSubTwitch()
-
           setData(dataSub)
 
           setLessonActive('Módulo 00')
         } catch (err) {
           setData(dataFollow)
+
+          const res = await CourseService.getToPlayer()
+          const courseToPlayer = res.data
+          console.log('courseToPlayer', courseToPlayer)
+
           setLessonActive('Módulo 00')
         }
       })(),
