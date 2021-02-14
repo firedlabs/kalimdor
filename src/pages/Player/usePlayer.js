@@ -575,7 +575,7 @@ function usePlayer() {
       },
       {
         title: 'Módulo 04',
-        tag: 'Novo',
+        tag: '',
         videos: [
           {
             src:
@@ -686,7 +686,7 @@ function usePlayer() {
       },
       {
         title: 'Módulo 05',
-        tag: '13/02',
+        tag: 'Novo',
         videos: [
           {
             src:
