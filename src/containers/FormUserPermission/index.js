@@ -40,7 +40,7 @@ function FormUserPermission() {
         <Field.Textarea
           label="Descrição"
           name="description"
-          placeholder="Descriva a permissão"
+          placeholder="Descreva a permissão"
           register={register}
         />
 
