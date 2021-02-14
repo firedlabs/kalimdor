@@ -37,8 +37,6 @@ function useFormUserTypes() {
             id
           }))
 
-          console.log('permissions', permissions)
-
           setPermissions(permissions)
         } catch (err) {
           setActiveLoading(false)

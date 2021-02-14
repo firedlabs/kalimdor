@@ -13,6 +13,7 @@ function useUserTypes() {
       (async () => {
         try {
           const { data } = await UserTypesService.getAll()
+          console.log('data', data)
           setData(data.map(({ name }) => [name]))
         } catch (err) {
           setActiveModalError(true)
