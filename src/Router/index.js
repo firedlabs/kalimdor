@@ -44,6 +44,12 @@ const Router = () => {
           exact
           component={UserTypes}
         />
+
+        <PrivateRouteAdmin
+          path="/admin/user/types/new"
+          component={UserTypesNew}
+        />
+
         <PrivateRouteAdmin
           path="/admin/user/permission"
           exact
@@ -56,10 +62,6 @@ const Router = () => {
           component={UserPermissionNew}
         />
 
-        <PrivateRouteAdmin
-          path="/admin/user/types/new"
-          component={UserTypesNew}
-        />
         <PrivateRouteAdmin path="/admin/user/:login" component={UserEdit} />
 
         <PrivateRouteAdmin path="/studio" exact component={Studio} />

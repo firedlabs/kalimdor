@@ -823,8 +823,8 @@ function usePlayer() {
           }
         ]
       },
-      { title: 'Módulo 06', tag: '14/02', videos: [] },
-      { title: 'Módulo 07', tag: '15/02', videos: [] }
+      { title: 'Módulo 06', tag: '15/02', videos: [] },
+      { title: 'Módulo 07', tag: '16/02', videos: [] }
     ]
   }
   const [data, setData] = useState(dataFollow)
