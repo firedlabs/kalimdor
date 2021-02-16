@@ -24,6 +24,7 @@ import Course from 'pages/Studio/Course'
 import NewCourse from 'pages/Studio/NewCourse'
 import UserPermission from 'pages/Admin/UserPermission'
 import UserPermissionNew from 'pages/Admin/UserPermissionNew'
+import UserTypesEdit from 'pages/Admin/UserTypesEdit'
 
 const Router = () => {
   ReactGA.initialize('UA-186693543-1')
@@ -48,6 +49,11 @@ const Router = () => {
         <PrivateRouteAdmin
           path="/admin/user/types/new"
           component={UserTypesNew}
+        />
+
+        <PrivateRouteAdmin
+          path="/admin/user/types/:id"
+          component={UserTypesEdit}
         />
 
         <PrivateRouteAdmin

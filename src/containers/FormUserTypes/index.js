@@ -1,19 +1,20 @@
+import PropTypes from 'prop-types'
 import { Form, Button, Field } from '@firedlabs/design-system'
 import FakeLoadingScreen from 'containers/FakeLoadingScreen'
 import ModalError from 'containers/ModalError'
 import useFormUserTypes from './useFormUserTypes'
 
-function FormUserTypes() {
+function FormUserTypes({ id }) {
   const {
     register,
     handleSubmit,
-    newUserTypes,
+    newOrUpdateUserTypes,
     activeModalError,
     actionCloseModalError,
     activeLoading,
     watch,
     permissions
-  } = useFormUserTypes()
+  } = useFormUserTypes(id)
 
   return (
     <>
@@ -24,7 +25,7 @@ function FormUserTypes() {
 
       <FakeLoadingScreen active={activeLoading} noPage={true} />
 
-      <Form onSubmit={handleSubmit(newUserTypes)}>
+      <Form onSubmit={handleSubmit(newOrUpdateUserTypes)} biggest>
         <Field.Text
           label="Nome"
           name="name"
@@ -59,6 +60,14 @@ function FormUserTypes() {
       </Form>
     </>
   )
+}
+
+FormUserTypes.defaulProps = {
+  id: ''
+}
+
+FormUserTypes.propTypes = {
+  id: PropTypes.string
 }
 
 export default FormUserTypes
