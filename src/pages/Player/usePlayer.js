@@ -686,7 +686,7 @@ function usePlayer() {
       },
       {
         title: 'Módulo 05',
-        tag: 'Novo',
+        tag: '',
         videos: [
           {
             src:
@@ -823,7 +823,40 @@ function usePlayer() {
           }
         ]
       },
-      { title: 'Módulo 06', tag: '17/02', videos: [] },
+      {
+        title: 'Módulo 06',
+        tag: 'Novo',
+        videos: [
+          {
+            src:
+              'https://player.vimeo.com/external/515049154.hd.mp4?s=27344a7f7cec1376b71e77cc78537b0f7ff2375a&profile_id=175',
+            title: 'Cria component Description',
+            poster: 'https://i.vimeocdn.com/video/1066887837.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515052406.hd.mp4?s=24e6c02916fec00a7898934b90596e7081b03588&profile_id=175',
+            title: 'Cria CSS do Description',
+            poster: 'https://i.vimeocdn.com/video/1066894580.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515196847.hd.mp4?s=99dc2f85e2e3c2a1c13befca9c0fa858b18d8ac7&profile_id=175',
+            title: 'Adiciona section e title',
+            poster: 'https://i.vimeocdn.com/video/1066905092.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515197295.hd.mp4?s=b5bc8d6e34d943f014b5d1873087c14cd0f597b6&profile_id=175',
+            title: 'Variação da section',
+            poster: 'https://i.vimeocdn.com/video/1066913354.jpg',
+            type: 'video/mp4'
+          }
+        ]
+      },
       { title: 'Módulo 07', tag: '18/02', videos: [] }
     ]
   }
