@@ -25,6 +25,7 @@ import NewCourse from 'pages/Studio/NewCourse'
 import UserPermission from 'pages/Admin/UserPermission'
 import UserPermissionNew from 'pages/Admin/UserPermissionNew'
 import UserTypesEdit from 'pages/Admin/UserTypesEdit'
+import IntzPage from 'pages/Teams/IntzPage'
 
 const Router = () => {
   ReactGA.initialize('UA-186693543-1')
@@ -34,6 +35,9 @@ const Router = () => {
       <Switch>
         <WithHeader path="/" exact component={Dashboard} />
         <WithHeader path="/profile" component={Profile} />
+
+        <Route path="/t/intz" component={IntzPage} />
+
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/event/register" exact component={CourseRegister} />
         <Route path="/event/html-css" exact component={CourseRegister} />
