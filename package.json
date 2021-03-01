@@ -8,7 +8,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.0",
     "axios": "^0.21.1",
-    "intz-design-system": "^0.1.8",
+    "intz-design-system": "^0.1.9",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
