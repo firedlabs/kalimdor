@@ -854,6 +854,153 @@ function usePlayer() {
             title: 'Variação da section',
             poster: 'https://i.vimeocdn.com/video/1066913354.jpg',
             type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515496845.hd.mp4?s=d1dabc7e8c66260940321bedbc501aafff708d04&profile_id=175',
+            title: 'Cria component button-arrow',
+            poster: 'https://i.vimeocdn.com/video/1074881213.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515503709.hd.mp4?s=9c523cf4ae952191129316c30fc771454daae2a7&profile_id=175',
+            title: 'Cria CSS do button-arrow',
+            poster: 'https://i.vimeocdn.com/video/1074882338.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515510323.hd.mp4?s=4d4f472b700b7b32652fc5b2849924b42d6b689d&profile_id=175',
+            title: 'Cria seta',
+            poster: 'https://i.vimeocdn.com/video/1074884458.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515519443.hd.mp4?s=382072477445780f1e50746dcb87482d25b1ddc3&profile_id=175',
+            title: 'Esconder texto',
+            poster: 'https://i.vimeocdn.com/video/1074890971.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515521914.hd.mp4?s=719971a22aa40c4fa959d73b415b2c761a3bcff9&profile_id=175',
+            title: 'Variação do button-arrow',
+            poster: 'https://i.vimeocdn.com/video/1074894343.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515960389.hd.mp4?s=c999f88bad332b7e4f50b3a2ab8d534a5c1bfc6d&profile_id=175',
+            title: 'Cria component node-card',
+            poster: 'https://i.vimeocdn.com/video/1074896060.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515963769.hd.mp4?s=d7170ea25359425fceacbefb1e1e59d941d01698&profile_id=175',
+            title: 'CSS do node-card',
+            poster: 'https://i.vimeocdn.com/video/1074901123.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/515969573.hd.mp4?s=f39150ad8b05717d5363b2176e53ff98f848aa8b&profile_id=175',
+            title: 'Tracinho ---',
+            poster: 'https://i.vimeocdn.com/video/1074906653.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/516424637.hd.mp4?s=7ad4bcd57eccf58c837a2064ae3294cb883428c9&profile_id=175',
+            title: 'Adiciona mais nodes',
+            poster: 'https://i.vimeocdn.com/video/1074909400.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/516437012.hd.mp4?s=39526db348c7ba5976d2c1823ec9d9f50751f425&profile_id=175',
+            title: 'Variação sem padding',
+            poster: 'https://i.vimeocdn.com/video/1074912770.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/516442489.hd.mp4?s=032c74d5dcd0bbdaa7b5616e8a4e0064d0c9643c&profile_id=175',
+            title: 'Variação da cor',
+            poster: 'https://i.vimeocdn.com/video/1074914817.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/516451179.hd.mp4?s=3e1da813e65f73f605bab7fdbee15872f360cab3&profile_id=175',
+            title: 'Posição do botão',
+            poster: 'https://i.vimeocdn.com/video/1074927467.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/516455728.hd.mp4?s=131b0c57638999b94cdbc916092f8cb4c8f5300a&profile_id=175',
+            title: 'Alinha os node-card',
+            poster: 'https://i.vimeocdn.com/video/1074933573.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/516458105.hd.mp4?s=e8358463408cfe60101ec5f6d1d0d71d8564d1bf&profile_id=175',
+            title: 'Linha horizontal',
+            poster: 'https://i.vimeocdn.com/video/1074935748.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/519040460.hd.mp4?s=d862b97c0d4bf69f0f8fccff3b3bed25e8499118&profile_id=175',
+            title: 'Mais tracinhos ---',
+            poster: 'https://i.vimeocdn.com/video/1074954796.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/517893731.hd.mp4?s=6c21614283bcebefbed107eaa67856f291bcaf54&profile_id=175',
+            title: 'Bug nos Projetos',
+            poster: 'https://i.vimeocdn.com/video/1074961534.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/517904653.hd.mp4?s=ff8c0a390ca8959d0aaa6ee1fe7ef3563ca0941e&profile_id=175',
+            title: 'Move node-card',
+            poster: 'https://i.vimeocdn.com/video/1074972797.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/517909790.hd.mp4?s=57e5aec1d38796c058c950b6a4f1d5e5092a8c86&profile_id=175',
+            title: 'Remove scroll horizontal',
+            poster: 'https://i.vimeocdn.com/video/1074975099.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/517924234.hd.mp4?s=83bb66050daee1701d479bf6f9010404606ef016&profile_id=175',
+            title: 'Primeiro JavaScript',
+            poster: 'https://i.vimeocdn.com/video/1074984130.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/517926655.hd.mp4?s=0d7092f3435b61782e74d3effcff564cde077b82&profile_id=175',
+            title: 'Revisão',
+            poster: 'https://i.vimeocdn.com/video/1074984130.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/517931309.hd.mp4?s=67b80cf4c611d2694a4fdd00a7d2245e202b8939&profile_id=175',
+            title: 'Desafios top top top',
+            poster: 'https://i.vimeocdn.com/video/1074987962.jpg',
+            type: 'video/mp4'
           }
         ]
       },
