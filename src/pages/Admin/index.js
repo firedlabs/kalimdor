@@ -16,6 +16,10 @@ function Admin() {
       <ActionCard as={Link} to="/admin/user/permission">
         Permissões de Usuário
       </ActionCard>
+
+      <ActionCard as={Link} to="/admin/team">
+        Times
+      </ActionCard>
     </Actions>
   )
 }

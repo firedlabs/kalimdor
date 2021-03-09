@@ -26,6 +26,8 @@ import UserPermission from 'pages/Admin/UserPermission'
 import UserPermissionNew from 'pages/Admin/UserPermissionNew'
 import UserTypesEdit from 'pages/Admin/UserTypesEdit'
 import IntzPage from 'pages/Teams/IntzPage'
+import Team from 'pages/Admin/Team'
+import TeamNew from 'pages/Admin/TeamNew'
 
 const Router = () => {
   ReactGA.initialize('UA-186693543-1')
@@ -73,6 +75,9 @@ const Router = () => {
         />
 
         <PrivateRouteAdmin path="/admin/user/:login" component={UserEdit} />
+
+        <PrivateRouteAdmin path="/admin/team" exact component={Team} />
+        <PrivateRouteAdmin path="/admin/team/new" component={TeamNew} />
 
         <PrivateRouteAdmin path="/studio" exact component={Studio} />
         <PrivateRouteAdmin path="/studio/video" exact component={Video} />
