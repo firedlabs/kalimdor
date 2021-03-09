@@ -1004,7 +1004,7 @@ function usePlayer() {
           }
         ]
       },
-      { title: 'Módulo 07', tag: '18/02', videos: [] }
+      { title: 'Módulo 07', tag: '09/03', videos: [] }
     ]
   }
   const [data, setData] = useState(dataFollow)
