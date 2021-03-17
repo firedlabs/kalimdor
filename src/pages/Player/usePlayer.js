@@ -825,7 +825,7 @@ function usePlayer() {
       },
       {
         title: 'Módulo 06',
-        tag: 'Novo',
+        tag: '',
         videos: [
           {
             src:
@@ -990,6 +990,13 @@ function usePlayer() {
           },
           {
             src:
+              'https://player.vimeo.com/external/521582310.hd.mp4?s=67fc99feadc4109655fd8e1837ef3af12b42f794&profile_id=175',
+            title: 'Ops! Commit',
+            poster: 'https://i.vimeocdn.com/video/1086955495.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
               'https://player.vimeo.com/external/517926655.hd.mp4?s=0d7092f3435b61782e74d3effcff564cde077b82&profile_id=175',
             title: 'Revisão',
             poster: 'https://i.vimeocdn.com/video/1074984130.jpg',
@@ -1004,7 +1011,159 @@ function usePlayer() {
           }
         ]
       },
-      { title: 'Módulo 07', tag: '09/03', videos: [] }
+      {
+        title: 'Módulo 07',
+        tag: 'Novo',
+        videos: [
+          {
+            src:
+              'https://player.vimeo.com/external/522256513.hd.mp4?s=92285b34e46ae060048cdbdb75234633376fcfbb&profile_id=175',
+            title: 'Cria HTML do footer',
+            poster: 'https://i.vimeocdn.com/video/1086961644.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522256884.hd.mp4?s=e91597a2d6c635632d710ba179e3a8fa17576679&profile_id=175',
+            title: 'Cria CSS do footer',
+            poster: 'https://i.vimeocdn.com/video/1086966174.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522257058.hd.mp4?s=f606d0e60761db88ec64087854bdb26d8dc8cf65&profile_id=175',
+            title: 'Commit main-footer',
+            poster: 'https://i.vimeocdn.com/video/1086973978.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522257150.hd.mp4?s=a459d5763a4de47b015c8d755dbe9f5a3a69286e&profile_id=175',
+            title: 'Cria HTML do form',
+            poster: 'https://i.vimeocdn.com/video/1086977669.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522257713.hd.mp4?s=3dfbfb74aec35772cf357d8bbf86f9442be4a6e4&profile_id=175',
+            title: 'Cria component main-label',
+            poster: 'https://i.vimeocdn.com/video/1086982642.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522257894.hd.mp4?s=56cc6652df73104680f06575ecfdd462f913a3ef&profile_id=175',
+            title: 'Commit main-label',
+            poster: 'https://i.vimeocdn.com/video/1086988616.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522257973.hd.mp4?s=4af732bfa016374862010bab6fa282d709972882&profile_id=175',
+            title: 'Cria component main-input',
+            poster: 'https://i.vimeocdn.com/video/1086991132.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522258165.hd.mp4?s=ae3e8a7284e45933aa74442b92705dfe86842b81&profile_id=175',
+            title: 'Commit main-input',
+            poster: 'https://i.vimeocdn.com/video/1086995034.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522258253.hd.mp4?s=bc087de22b8b86e88bcb66258f97f85b20523ec3&profile_id=175',
+            title: 'Variação do main-input',
+            poster: 'https://i.vimeocdn.com/video/1081596021.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522258390.hd.mp4?s=b44f57e2bf77d16b6a338f8c94f9c959fc504946&profile_id=175',
+            title: 'Commit da variação',
+            poster: 'https://i.vimeocdn.com/video/1087000234.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522258470.hd.mp4?s=899f6809933e6c1b12fa2d07eb66e43698219a89&profile_id=175',
+            title: 'Variação do main-button',
+            poster: 'https://i.vimeocdn.com/video/1087002186.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522258618.hd.mp4?s=f2e3f3bad554dd69312826463a9ce37dd181862d&profile_id=175',
+            title: 'Commit do main-button',
+            poster: 'https://i.vimeocdn.com/video/1087004599.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522258685.hd.mp4?s=270ea1f85df891722a18dd4131f9a4297df416f0&profile_id=175',
+            title: 'Alinhar form e filhos',
+            poster: 'https://i.vimeocdn.com/video/1087010196.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522258979.hd.mp4?s=b921856571c4b03e7e0d54fcf5e70046aef5585e&profile_id=175',
+            title: 'Commit do main-form',
+            poster: 'https://i.vimeocdn.com/video/1087014483.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522259059.hd.mp4?s=ee724b38c53e31f0c6c699dbc8948593f153eea7&profile_id=175',
+            title: 'Bug do main-button',
+            poster: 'https://i.vimeocdn.com/video/1081598303.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522259180.hd.mp4?s=f2cf9bdf658779233522cca4727b5af78fdef934&profile_id=175',
+            title: 'Commit do main-button',
+            poster: 'https://i.vimeocdn.com/video/1087018961.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522259256.hd.mp4?s=548ae17a7c33a237865e16a5ebab2287637b542e&profile_id=175',
+            title: 'Title no main-form',
+            poster: 'https://i.vimeocdn.com/video/1087026840.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522259394.hd.mp4?s=96a50245d97858b0e21ad51318e28d1283c98d6f&profile_id=175',
+            title: 'Commit do title',
+            poster: 'https://i.vimeocdn.com/video/1087031334.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522259476.hd.mp4?s=8177ad65dc1a7d5d45d95991c019a804cc661954&profile_id=175',
+            title: 'Validação do main-form',
+            poster: 'https://i.vimeocdn.com/video/1087033638.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522259705.hd.mp4?s=a0753870999db0705f1b7e05865125c2f7a46422&profile_id=175',
+            title: 'Revisão',
+            poster: 'https://i.vimeocdn.com/video/1087037396.jpg',
+            type: 'video/mp4'
+          },
+          {
+            src:
+              'https://player.vimeo.com/external/522260054.hd.mp4?s=1e94f606b23053998770af0d92f680d679d7e8a6&profile_id=175',
+            title: 'Desafio final',
+            poster: 'https://i.vimeocdn.com/video/1087038774.jpg',
+            type: 'video/mp4'
+          }
+        ]
+      }
     ]
   }
   const [data, setData] = useState(dataFollow)
