@@ -5,6 +5,8 @@ UserService.getAll = async () => await api.get('/user')
 UserService.getAvatar = async () => await api.get('/user/avatar')
 UserService.getTwitch = async () => await api.get('/user/twitch')
 UserService.hasAuthorized = async () => await api.get('/user/authorized')
+UserService.hasAdmin = async (token) =>
+  await api.get(`/user/admin/validate/${token}`)
 UserService.get = async (login) => await api.get(`/user/login/${login}`)
 UserService.twitchRevoke = async () => await api.post('/user/twitch/revoke')
 UserService.validateTwitch = async () => await api.get('/user/twitch/validate')

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import Cookie from 'js-cookie'
 import UserService from 'services/UserService'
 
 function useLogout() {
@@ -13,6 +14,7 @@ function useLogout() {
         try {
           await UserService.twitchRevoke()
           localStorage.removeItem('avatar')
+          Cookie.remove('token')
           setActiveLoading(false)
           history.push('/')
         } catch (err) {

@@ -1,29 +1,18 @@
-import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { FiredLabs } from '@firedlabs/design-system'
-import HeaderStyle from './styles'
-import useHeader from './useHeader'
+import { HeaderStyle } from './styles'
+import Menu from 'containers/Menu'
 
 function Header() {
-  const { hasAvatar } = useHeader()
-
   return (
     <HeaderStyle>
       <Link to="/">
         <FiredLabs />
       </Link>
 
-      {hasAvatar()}
+      <Menu />
     </HeaderStyle>
   )
-}
-
-Header.defaultProps = {
-  avatar: ''
-}
-
-Header.propTypes = {
-  avatar: PropTypes.string
 }
 
 export default Header
