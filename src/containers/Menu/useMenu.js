@@ -19,23 +19,28 @@ function useMenu() {
     }
   }
 
-  useEffect(() => {
-    hasLogin()
-    hasAdmin()
-  }, [])
-
   const hasAdmin = async () => {
     try {
-      setLoadingMenu(true)
       const token = Cookie.get('token')
-      await UserService.hasAdmin(token)
-      setLoadingMenu(false)
-      setAdmin(true)
+
+      console.log(token)
+
+      if (token) {
+        setLoadingMenu(true)
+        await UserService.hasAdmin()
+        setLoadingMenu(false)
+        setAdmin(true)
+      }
     } catch (error) {
       setLoadingMenu(false)
       setAdmin(false)
     }
   }
+
+  useEffect(() => {
+    hasLogin()
+    hasAdmin()
+  }, [])
 
   const signupAndLogin = (event) => {
     if (loading) {
