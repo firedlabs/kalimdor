@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import UserService from 'services/UserService'
-import Cookie from 'js-cookie'
 
 const { REACT_APP_API } = process.env
 
@@ -21,13 +20,13 @@ function useMenu() {
 
   const hasAdmin = async () => {
     try {
-      const token = Cookie.get('token')
-
-      console.log(token)
-
-      if (token) {
+      if (avatar) {
         setLoadingMenu(true)
-        await UserService.hasAdmin()
+        const {
+          data: { login }
+        } = await UserService.getTwitch()
+
+        await UserService.hasAdmin(login)
         setLoadingMenu(false)
         setAdmin(true)
       }
@@ -39,8 +38,11 @@ function useMenu() {
 
   useEffect(() => {
     hasLogin()
-    hasAdmin()
   }, [])
+
+  useEffect(() => {
+    hasAdmin()
+  }, [avatar])
 
   const signupAndLogin = (event) => {
     if (loading) {
