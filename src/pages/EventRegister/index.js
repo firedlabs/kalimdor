@@ -2,21 +2,46 @@ import {
   Heading,
   Icons,
   Section,
-  Title,
-  Countdown,
   Box,
   Button,
   ListContentDay,
   Container,
   VideoPlayer
 } from '@firedlabs/design-system'
-import { BannerContent, EventContent, Header, WrapperIcons } from './styles'
+import { BannerContent, EventContent, WrapperIcons } from './styles'
 import Sponsor from 'containers/Sponsor'
 import Instructor from 'containers/Instructor'
 import Footer from 'containers/Footer'
 import Supporters from 'containers/Supporters'
+import marcobruno from 'assets/images/marcobruno.png'
 
 function EventRegister() {
+  const instructor = {
+    avatar: marcobruno,
+    socialMedias: [
+      {
+        name: 'twitter',
+        url: 'https://twitter.com/marcobrunodev'
+      },
+      {
+        name: 'twitch',
+        url: 'https://twitch.tv/marcobrunodev'
+      },
+      {
+        name: 'youtube',
+        url: 'https://youtube.com/marcobrunodev'
+      }
+    ],
+    bio: `Hoje, instrutor e desenvolvedor FrontEnd/UX pela CollabCode, Marco já
+    trabalhou nas mais diversas áreas. Foi palhaço, entrou na área de TI
+    como desenvolvedor HMI/PLC e gosta de ir descobrindo seu caminho
+    conforme o percorre. Marco também tem uma crescente presença em
+    comunidades de UX e Front-end, trabalhando para uní-las, palestra em
+    empresas e eventos como o WebBR, escreve em diversos blogs como o da
+    Caelum, o Pinceladas da Web e seu Medium, quando não está jogando
+    Airsoft ou trocando ideias com amigos.`
+  }
+
   const days = [
     {
       title: 'Módulo 00',
@@ -28,10 +53,6 @@ function EventRegister() {
         {
           label: 'Qtd. Aulas',
           description: '7'
-        },
-        {
-          label: 'Disponível após a',
-          description: 'Matrícula'
         }
       ]
     },
@@ -52,10 +73,6 @@ function EventRegister() {
         {
           label: 'Qtd. Aulas',
           description: '20'
-        },
-        {
-          label: 'Disponível em:',
-          description: '08/02/2021'
         }
       ]
     },
@@ -73,10 +90,6 @@ function EventRegister() {
         {
           label: 'Qtd. Aulas',
           description: '16'
-        },
-        {
-          label: 'Disponível em:',
-          description: '09/02/2021'
         }
       ]
     },
@@ -90,10 +103,6 @@ function EventRegister() {
         {
           label: 'Qtd. Aulas',
           description: '22'
-        },
-        {
-          label: 'Disponível em:',
-          description: '10/02/2021'
         }
       ]
     },
@@ -111,10 +120,6 @@ function EventRegister() {
         {
           label: 'Qtd. Aulas',
           description: '26'
-        },
-        {
-          label: 'Disponível em:',
-          description: '11/02/2021'
         }
       ]
     },
@@ -132,10 +137,6 @@ function EventRegister() {
         {
           label: 'Qtd. Aulas',
           description: '18'
-        },
-        {
-          label: 'Disponível em:',
-          description: '12/02/2021'
         }
       ]
     },
@@ -154,10 +155,6 @@ function EventRegister() {
         {
           label: 'Qtd. Aulas',
           description: '27'
-        },
-        {
-          label: 'Disponível em:',
-          description: '13/02/2021'
         }
       ]
     },
@@ -175,10 +172,6 @@ function EventRegister() {
         {
           label: 'Qtd. Aulas',
           description: '28'
-        },
-        {
-          label: 'Disponível em:',
-          description: '14/02/2021'
         }
       ]
     }
@@ -187,11 +180,6 @@ function EventRegister() {
 
   return (
     <>
-      <Header>
-        <Title>Matrícula acaba em...</Title>
-        <Countdown paramLastDate="2021-2-7" />
-      </Header>
-
       <Section
         id="video"
         biggest
@@ -211,10 +199,10 @@ function EventRegister() {
             box={true}
             sources={{
               src:
-                'https://player.vimeo.com/external/504737839.hd.mp4?s=8212099bc1a53dcbc4e184f0dd787e4dce2f4f44&profile_id=169',
+                'https://player.vimeo.com/external/535897255.hd.mp4?s=1afb4760ac9656e314b4fc26e65f50cfbb401e9c&profile_id=175',
               type: 'video/mp4'
             }}
-            poster="https://i.vimeocdn.com/video/1046890769.jpg"
+            poster="https://i.vimeocdn.com/video/1111140531.jpg"
           />
           <Button
             as="a"
@@ -227,7 +215,7 @@ function EventRegister() {
         </BannerContent>
       </Section>
 
-      <Instructor />
+      <Instructor data={instructor} />
 
       <EventContent
         biggest
@@ -238,16 +226,27 @@ function EventRegister() {
           <Heading medium>Conteúdo do curso</Heading>
 
           <Box light>
-            Uma semana de aulas práticas, 100% grátis e 100% online. Começa no
-            dia <strong>08/02/2021</strong>. As aulas serão liberadas às{' '}
-            <strong>06:32</strong> da madrugada na plataforma{' '}
-            <a href="https://www.firedlabs.com">FiredLabs</a> e terá plantão de
-            dúvidas ao vivo às <strong>17:33</strong> na{' '}
-            <a href="https://twitch.tv/marcobrunodev">
-              twitch.tv/marcobrunodev
+            Conteúdo feliz de graça e online com 7 módulos para você começar a
+            dar seu primeiros passos com <strong>HTML</strong>,{' '}
+            <strong>CSS</strong> e uma introdução a <strong>Git/GitHub</strong>.
+            Nesse curso criamos um portfolio do zero e colocamos ele no ar
+            usando <strong>GitHub Pages</strong>. Qualquer dúvida que tiver,
+            entre no{' '}
+            <a
+              href="https://discord.gg/FP5UaAG"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Discord
             </a>{' '}
-            em todos os dias durante a semana do curso. As aulas ficam
-            disponiveis até o dia 14/02/2021 às 23:59.
+            ou na{' '}
+            <a
+              href="https://twitch.tv/marcobrunodev"
+              target="_blank"
+              rel="noreferrer"
+            >
+              twitch.tv/marcobrunodev
+            </a>
           </Box>
 
           <ListContentDay days={days} />

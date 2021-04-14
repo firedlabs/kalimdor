@@ -1,8 +1,10 @@
+import PropTypes from 'prop-types'
 import { Heading, Profile, Description } from '@firedlabs/design-system'
 import { InstructorStyle, Content } from './styles'
-import marcobruno from 'assets/images/marcobruno.png'
 
-function Instructor() {
+function Instructor({ data }) {
+  const { avatar, name, socialMedias, bio } = data
+
   return (
     <InstructorStyle
       backgroundColor="colorBlackFirst"
@@ -11,38 +13,28 @@ function Instructor() {
     >
       <Heading big>Instrutor</Heading>
       <Content>
-        <Profile
-          avatar={marcobruno}
-          name="Marco Bruno"
-          socialMedias={[
-            {
-              name: 'twitter',
-              url: 'https://twitter.com/marcobrunodev'
-            },
-            {
-              name: 'twitch',
-              url: 'https://twitch.tv/marcobrunodev'
-            },
-            {
-              name: 'youtube',
-              url: 'https://youtube.com/collabcode'
-            }
-          ]}
-        />
+        <Profile avatar={avatar} name={name} socialMedias={socialMedias} />
 
-        <Description>
-          Hoje, instrutor e desenvolvedor FrontEnd/UX pela CollabCode, Marco já
-          trabalhou nas mais diversas áreas. Foi palhaço, entrou na área de TI
-          como desenvolvedor HMI/PLC e gosta de ir descobrindo seu caminho
-          conforme o percorre. Marco também tem uma crescente presença em
-          comunidades de UX e Front-end, trabalhando para uní-las, palestra em
-          empresas e eventos como o WebBR, escreve em diversos blogs como o da
-          Caelum, o Pinceladas da Web e seu Medium, quando não está jogando
-          Airsoft ou trocando ideias com amigos.
-        </Description>
+        <Description>{bio}</Description>
       </Content>
     </InstructorStyle>
   )
+}
+
+const medias = {
+  name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
+}
+
+const instructor = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  socialMedias: PropTypes.arrayOf(PropTypes.shape(medias)),
+  bio: PropTypes.string.isRequired
+}
+
+Instructor.propTypes = {
+  data: PropTypes.shape(instructor).isRequired
 }
 
 export default Instructor

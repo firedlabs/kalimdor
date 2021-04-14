@@ -12,7 +12,7 @@ import User from 'pages/Admin/User'
 import UserEdit from 'pages/Admin/UserEdit'
 import UserTypes from 'pages/Admin/UserTypes'
 import UserTypesNew from 'pages/Admin/UserTypesNew'
-import PrivateRouteAdmin from './PrivavateRouteAdmin'
+import PrivateRouteAdmin from './PrivateRouteAdmin'
 import Logout from 'pages/Logout'
 import Studio from 'pages/Studio'
 import NewVideo from 'pages/Studio/NewVideo'
@@ -28,6 +28,7 @@ import UserTypesEdit from 'pages/Admin/UserTypesEdit'
 import IntzPage from 'pages/Teams/IntzPage'
 import Team from 'pages/Admin/Team'
 import TeamNew from 'pages/Admin/TeamNew'
+import MobileFirst from 'pages/Event/MobileFirst'
 
 const Router = () => {
   ReactGA.initialize('UA-186693543-1')
@@ -43,6 +44,7 @@ const Router = () => {
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/event/register" exact component={CourseRegister} />
         <Route path="/event/html-css" exact component={CourseRegister} />
+        <Route path="/event/mobile-first" exact component={MobileFirst} />
         <PrivateRoute path="/player" component={Player} />
         <PrivateRouteAdmin path="/admin" exact component={Admin} />
         <PrivateRouteAdmin path="/admin/user" exact component={User} />
