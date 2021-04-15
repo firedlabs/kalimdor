@@ -1,13 +1,17 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { useHistory } from 'react-router-dom'
 import VideoService from 'services/VideoService'
 
-function useFormVideo() {
+function useFormVideo(id) {
   const history = useHistory()
-  const { register, handleSubmit, watch } = useForm()
+  const { register, handleSubmit, watch, setValue } = useForm()
   const [activeLoading, setActiveLoading] = useState(false)
   const [activeModalError, setActiveModalError] = useState(false)
+
+  useEffect(() => {
+    setValue('teste', 'vai que vai')
+  }, [])
 
   const actionCloseModalError = () => {
     setActiveModalError(false)
